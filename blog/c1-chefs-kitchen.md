@@ -3,7 +3,6 @@ Brittney's Blog
 
 September 20, 2014
 
-Based on the video, what's your take on the DBC experience? What is your impression of DBC? How do you see yourself engaging with this type of culture? Have your expectations of DBC changed? If so, how? Are you excited to participate in this kind of learning environment? Does it make you nervous?
 
 One of the biggest things that sets DevBootcamp apart from other coding bootcamps is its emphasis on human interaction and understanding. DevBootcamp doesn't prepare its students to sit in little cubicles for 8 hours a day, shut off from sunlight and conversation. DevBootcamp prepares students to become team members, problem solvers, on-their-toes-thinkers, and from-the-heart engagers. And I can't wait to be in a classroom full of the teachers and students who have been selected to undertake this personal and collective challenge!
 
