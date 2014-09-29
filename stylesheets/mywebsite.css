@@ -7,7 +7,7 @@ h1 {
   font-size: 120px;
   display: inline-block;
   margin-top: 218px;
-  padding-left: 45px;
+  padding-left: 30px;
   font-family: 'Lobster', cursive;
   color: white;
 }
@@ -23,4 +23,5 @@ img {
   display: inline-block;
   margin-top: 15px;
   margin-right: 10px;
+
 }
