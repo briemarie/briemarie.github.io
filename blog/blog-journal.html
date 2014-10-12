@@ -18,6 +18,41 @@
 </h3>
 
 <h1>~Welcome to Brittney's Blog~</h1>
+<img src="http://www.globalnerdy.com/wordpress/wp-content/uploads/2008/08/ruby_enumerablegroup_by.jpg"class="centeredImage" alt="Ruby Groupies"/>
+
+
+<h2> "Ruby Groupies" <br />
+  <span> October 11, 2014 </span></h2>
+
+<div>
+  <p>
+    Over the past couple of weeks, going through the Phase 0 challenges, I have started using methods that fall under the Enumerable module. This module wasn't something I had in encountered in my prep material, but the methods included under that title were. I remember learning about methods such as <code>sort</code>, <code>count</code>, <code>min</code>, <code>max</code>, <code>include?</code>, and <code>to_a</code>. Suddenly though, as I was reading the <a href="http://ruby-doc.org/core-2.0.0/">Ruby docs</a>, looking for methods to implement for my challenges, these methods were being classified as Enumerable methods. Now before I was chasing the dream of being a dev, I was an English major. I have a background in language, basically words and their meanings. Since the word 'enumerable' has the root 'numeral', my mind came to its own conclusion that these methods were methods that could be called on the 'numbers' in the objects that I was calling them on, since everytime I was using these methods I was dealing with arrays and hashes, both of which are objects that contain any 'number' of objects. This may seem weird- I mean, I could have just looked up Enumerable and figured out what it actually meant- but I was satisfied with my own semantic deduction. Then came this blog prompt, so I decided I better figure out what Enumerable actually was before attempting to teach others about it. I started by reading chapter 10 in <a href ="http://www.manning.com/black3/">"The Well Grounded Rubyist, 2nd ed."</a> And guess what... my semantic deduction was not wrong! Good 'ol English. The Enumerable module has the <code>each</code> method as its foundation. Built upon this <code>each</code> method foundation are many other methods that are built into the Enumerable module, such as the ones I listed above and many more. (If the term module is throwing you off, like it did for me at first, its a pretty simple concept- its basically a group of characteristics that many objects share in common.) All of these methods, since <code>each</code> is their foundation, act upon each object within any other object, such as arrays and hashes, and also classes. I came up with a fun way to remember this fact:<br />
+    Enumerable = E + numer + able = Each + number + is able <br />
+    Meaning, that 'each' object within the 'number' of objects, is going to be 'able' to do something. For instance, the <code>max</code> method, is going to go through each string, integer, or float in an array, and be able to find the one that has the highest value.<p>
+
+    <p> Now that I have explained a little bit about the Enumerable class, and I hope it all makes sense to you, I would like to go more in depth about one Enumerable method in particular- <code>group_by</code>. Does the title of my blog make sense now? I'm sure you were wondering... Luckily, <code>group_by</code> is one of those great methods that does just what it sounds like it would (here we are, back to semantics)- it 'groups' objects 'by' a criteria. Chapter 10.3.4 gives a clear and fun example of this method in action by using colors. I don't want to just give you their example though, so here is one of my own, using something just as awesome as colors- music! </p>
+
+    <code>
+    def first_letter(bands)<br />
+        bands.group_by {|l| l[0]}<br />
+    end<br />
+    <br />
+    output = first_letter(["Goo Goo Dolls", "Alice in Chains", "Nirvana", "Red Hot Chili Peppers", "Soundgarden", "Blink-182", "Matchbox 20", "Radiohead", "No Doubt", "Sublime"])<br />
+    puts output</code>
+
+    <p> Can you guess what the output will be? I'll give you a hint: <code>group_by</code> returns a hash of arrays... This is the output of the above Ruby code: </p>
+
+    <code>
+      {"G"=>["Goo Goo Dolls"], "A"=>["Alice in Chains"], "N"=>["Nirvana", "No Doubt"], "R"=>["Red Hot Chili Peppers", "Radiohead"], "S"=>["Soundgarden", "Sublime"], "B"=>["Blink-182"], "M"=>["Matchbox 20"]}
+    </code>
+
+  <p> Pretty neat huh? And you can group by many criteria, including <code>size</code> or <code>length</code> and more complex criteria, like adding the method <code>include?</code> to group together objects that include certain letters or numbers, or even strings.
+  </p>
+  <p>
+    Now that you know more about the Enumerable module, and one of its methods, get to grouping you Ruby groupie you!</p>
+</div>
+
+<hr>
 
 <img src="http://greggnordin.com/wp-content/uploads/2013/12/cropped-science_left_red_education_brain_black_right_hd-wallpaper-995584.jpg"class="centeredImage"alt="Left vs Right Brain"/>
 
