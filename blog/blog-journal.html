@@ -132,9 +132,9 @@ When I first encountered these two classes in Ruby, the first one, array, made s
   year: 1987<br />
 }</code>
 
-<p>As you can see, its not really a mess, it makes perfect sense how these things go together, but if we were to look at just  the keys(in this case animal, food, number, color, green) they do seem like incongruous things. They only become related by  their values being related as favorite things.</p>
+<p>As you can see, its not really a mess, it makes perfect sense how these things go together, but if we were to look at just  the keys(in this case <code>animal</code>, <code>food</code>, <code>number</code>, <code>color</code>, <code>green</code>) they do seem like incongruous things. They only become related by  their values being related as favorite things.</p>
 
-<p>In my personal opinion hashes are the superior way to store information, simply because it is much easier to access the stored info. If I were to want to access my favorite color in the array, the only way to find it would be to point to its position in the array, using an integer. The first item in the array is given the value 0, the second is 1, and so forth. So, I would need to know that color was the fourth item and access it by typing:</p>
+<p>In my personal opinion hashes are the superior way to store information, simply because it is much easier to access the stored info. If I were to want to access my favorite color in the array, the only way to find it would be to point to its position in the array, using an integer. The first item in the array is given the value <code>0</code>, the second is <code>1</code>, and so forth. So, I would need to know that color was the fourth item and access it by typing:</p>
 
 <code>favorite_things[3]</code>
 
@@ -142,7 +142,7 @@ When I first encountered these two classes in Ruby, the first one, array, made s
 
 <code>favorite_things[color]</code>
 
-<p>As far as methods go, almost all the same methods can be used for both arrays and hashes, some of the most common being .each, .include?, and .length, making hashes and arrays equally useful. However, like I said before, hashes seem logically superior based on the fact that you can access the value by the key, instead of a place-holder integer.
+<p>As far as methods go, almost all the same methods can be used for both arrays and hashes, some of the most common being <code>.each</code>, <code>.include?</code>, and <code>.length</code>, making hashes and arrays equally useful. However, like I said before, hashes seem logically superior based on the fact that you can access the value by the key, instead of a place-holder integer.
 </p>
 </div>
 
@@ -167,7 +167,7 @@ When I first encountered these two classes in Ruby, the first one, array, made s
 <img src="http://xhtml.com/8FCEE4B2-AF88-4574-BBC6-3C94FBD64380/border-box-model.gif"class="centeredImage" alt="CSS Framing" height="300px" width="400px"/>
 
 <p>
-  As you can see, the padding is the space between the content and the border. Since everyting in CSS is essentially a box, whether the content is a single letter, a sentence, a paragraph, an image, a div, or a table, everything essentially has a border, even if you can't see it. (By the way, the black line that outlines this picture, is its border set to 2px solid black). By specifying the padding size, which you can set to all four sides differently or equally, you push or bring in the border closer or further away from your content- boxers or briefs if you will.
+  As you can see, the padding is the space between the content and the border. Since everyting in CSS is essentially a box, whether the content is a single letter, a sentence, a paragraph, an image, a div, or a table, everything essentially has a border, even if you can't see it. (By the way, the black line that outlines this picture, is its border set to <code>2px solid black</code>). By specifying the padding size, which you can set to all four sides differently or equally, you push or bring in the border closer or further away from your content- boxers or briefs if you will.
 </p>
 
 <p>
@@ -177,26 +177,28 @@ When I first encountered these two classes in Ruby, the first one, array, made s
 <p>
   There are several ways you can go about setting up the various sizes of the padding, border, and margins around the content of your page.You can use the following: </p>
   <p>
-  px: for pixels, basically one single dot on your screen.<br />
-  pt: for point, like a pixel, it is only 1/72 of an inch.<br />
-  %: which will make the padding, border, or margin a percentage of the content size<br />
+  <code>px</code>: for pixels, basically one single dot on your screen.<br />
+  <code>pt</code>: for point, like a pixel, it is only 1/72 of an inch.<br />
+  <code>%</code>: which will make the padding, border, or margin a percentage of the content size<br />
   or, simply<br />
-  cm: for centimeter, or<br />
-  in: for inches.
+  <code>cm</code>: for centimeter, or<br />
+  <code>in</code>: for inches.
 </p>
 
 <p>
   You can also choose how specific you want to be in your code.<br />
 
   Look at the following examples:</p>
-<p>
+
+<code>
   square {<br />
         margin: 10px<br />
   }<br />
-
+<br / >
   rectangle {<br />
         margin: 10px, 5px, 10px, 5px<br />
-  }</p>
+  }
+</code>
 
   <p>
   The 10px you see for square is denoting that all sides will be the same size. <br />
@@ -236,7 +238,7 @@ Like I said before, if I learn nothing about actual coding, I will not consider 
 
 <hr>
 
-<img src="http://www.quickmeme.com/img/eb/ebc15cdd5a6647a945d5cf53b6ac004a0ba2656a63a6692ceb4cb86703461f31.jpg"class="centeredImage" alt="image description"/>
+<img src="http://www.quickmeme.com/img/eb/ebc15cdd5a6647a945d5cf53b6ac004a0ba2656a63a6692ceb4cb86703461f31.jpg"class="centeredImage" alt="Patrick the Git Master"/>
 
 
 <h2> "A Beginner's Guide for Beginners in Git and GitHub" <br />
