@@ -2,6 +2,10 @@
   background-color: #66FFCC;
 }
 
+background {
+  opacity: 0.1;
+}
+
 .center {
   text-align: center;
   padding-bottom: 50px;
