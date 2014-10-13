@@ -1,0 +1,9 @@
+img {
+  display: inline-block;
+  height: 350px;
+  width: 700px;
+}
+
+* {
+  background-color: black;
+}
