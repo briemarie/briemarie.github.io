@@ -67,7 +67,7 @@
     &nbsp;&nbsp;&nbsp;&nbsp;print element<br />
     &nbsp;&nbsp;end<br />
     end</code>
-  <p> Now say we had a bloc of code, that was actually some command that was much longer than just a simple print statement, and not only was it long, but we needed to reuse it over and over in out program? Well, in order to follow the DRY (don't repeat yourself) rule, we could save the bloc, or rather the action needed into a 'proc', which is short for procedure. The above code would then be changed to the following:<p>
+  <p> Now say we had a bloc of code, that was actually some command that was much longer than just a simple print statement, and not only was it long, but we needed to reuse it over and over in out program? Well, in order to follow the DRY (don't repeat yourself) rule, we could save the bloc, or rather the action needed into a 'proc', which is short for procedure. The above code would then be changed to the following:</p>
     <code>def array_print<br />
     &nbsp;&nbsp;print = Proc.new do |element|<br />
     &nbsp;&nbsp;&nbsp;&nbsp;print element<br />
