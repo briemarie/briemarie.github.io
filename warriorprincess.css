@@ -11,21 +11,25 @@ h1 {
 }
 
 #castle {
-  size: 40%;
+  width: 40%;
+  height: 40%;
   float: left;
 }
 
 #mountain {
-  size: 40%;
+  width: 40%;
+  height: 40%;
   float: right;
 }
 
 #forest {
-  size: 40%;
+  width: 40%;
+  height: 40%;
   float: left;
 }
 
 #battle {
-  size: 40%;
+  width: 40%;
+  height: 40%;
   float: right;
 }
