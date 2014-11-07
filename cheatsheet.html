@@ -25,42 +25,49 @@
 
   <img src= "../website-pics/prototype_tree.jpg"class="centeredImage"/>
 
-  <div>
-  Most common Array methods:<br />
-  .pop, .push<br />
-  .shift, .unshift<br />
-  .slice, .join<br />
-  .sort, .splice<br />
-  .concat, .reverse<br />
-  .length</div>
+  <h3>Most common methods for most common prototypes:</h3>
 
-  <br />
-
-  <div>
-  Most common Function methods:<br />
-  .call<br />
-  .bind<br />
-  .apply<br />
-  .length</div>
-
-  <br />
-
-  <div>
-  Most common RegExp methods:<br />
-  .exec<br />
-  .test</div>
-
-  <br />
-
-  <div>
-  Most common Date methods:<br />
-  .getDate, .getDay<br />
-  .getHours, .getMinutes<br />
-  (basically any part of a date or time you can think of down to milliseconds)<br />
-  .getTimezoneOffset<br />
-  .toLocaleTimeString</div>
-
-  <br />
+  <table>
+    <table border="1" style="width:100%">
+    <thead>
+      <tr>
+        <th>Array</th>
+        <th>Function</th>
+        <th>RegExp</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+  <tr>
+    <td>.pop, .push</td>
+    <td>.call</td>
+    <td>.exec</td>
+    <td>.getDate, .getDay</td>
+  </tr>
+  <tr>
+    <td>.shift, .unshift</td>
+    <td>.bind</td>
+    <td>.test</td>
+    <td>.getHours, .getMinutes</td>
+  </tr>
+   <tr>
+    <td>.slice, .join</td>
+    <td>.apply</td>
+    <td></td>
+    <td>.getTimezoneOffset</td>
+  </tr>
+   <tr>
+    <td>.sort, .splice</td>
+    <td>.length</td>
+    <td></td>
+    <td>.toLocaleTimeString</td>
+  </tr>
+  <tr>
+    <td>.concat, .reverse</td>
+  </tr>
+  <tr>
+    <td>.length</td>
+  </tr>
+</table>
 
   <p>To make your own prototype, which by definition is "a first, typical or preliminary model of something, esp. a machine, from which other forms are developed or copied", you are creating a framework for actual instances of the objects you need. To do this using the constructor function, which is the most common and widely supported way, all you need are a few key words. Below is an example:<br />
 
