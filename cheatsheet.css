@@ -4,6 +4,6 @@ h3 {
   display:block;
 }
 
-table, th, td {
+table, th {
     border: 1px solid black;
 }
