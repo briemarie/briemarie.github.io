@@ -19,4 +19,6 @@ img {
 .center {
   text-align: center;
   padding-bottom: 50px;
+  color: white;
+  font-family: 'Lobster', cursive;
 }
