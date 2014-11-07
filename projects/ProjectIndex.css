@@ -1,0 +1,17 @@
+* {
+  background-color: black;
+}
+
+h1 {
+  color: white;
+  font-family: 'Lobster', cursive;
+}
+
+h3 {
+  color: white;
+  font-family: 'Lobster', cursive;
+}
+
+img {
+  border: 2px solid white;
+}
