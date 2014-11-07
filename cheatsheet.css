@@ -1,13 +1,6 @@
- div {
+div {
   display: inline;
-  border: 1px solid black;
-  height: 200px;
   width: 20%;
-}
-
-img {
-  text-align:center;
-  display:block;
 }
 
 h3 {
