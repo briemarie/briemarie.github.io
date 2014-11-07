@@ -8,7 +8,7 @@
 
 <body>
   <h3>JavaScript Prototypes</h3>
-  <p> JavaScript prototypes are objects that are similar to Class objects in Ruby. They are objects that come with a pack of methods, built in, for example .toString , .getPrototypeOf , and .hasOwnProperty are all methods that the Object prototype inherently has. Since all prototypes can be traced back up the tree to the Object prototype, all prototypes have the methods associated with Object, plus their own unique methods, such as .pop, .push, .shift, .unshift, .slice, and .sort that the Array prototype inherently has.  Furthermore, you can create your own prototypes, which are like the parent classes in Ruby that branch off into subclasses. All the subclasses inherit all the methods and properties of the parent class. In JS the parent class is the prototype and the subclasses are called instances of the prototype.</p>
+  <p> JavaScript prototypes are similar to Class objects in Ruby. They are objects that are packed with built-in methods, such as <code>.toString</code> , <code>.isPrototypeOf</code> , and <code>.hasOwnProperty</code>. Since all prototypes can be traced back up the tree to the Object prototype, all prototypes have the methods associated with Object, plus their own unique methods. For example, <code>.pop</code>, <code>.push</code>, <code>.shift</code>, <code>.unshift</code>, <code>.slice</code>, and <code>.sort</code> are inherent to the Array prototype.  Furthermore, you can create your own prototypes, which are like the parent classes in Ruby that branch off into child classes. All the child classes inherit the methods and properties of the parent class. In JS the parent class is the prototype and the subclasses are called instances of the prototype.</p>
 
   <h3>Key aspects to remember:</h3>
   <p>Prototypes are Capitalized to distinguish them from other objects.<br />
@@ -20,10 +20,12 @@
 
   <h3>Most common methods for most common prototypes:</h3>
 
+
   <table>
     <table border="1" style="width:100%">
     <thead>
       <tr>
+        <th>Object</th>
         <th>Array</th>
         <th>Function</th>
         <th>RegExp</th>
@@ -31,43 +33,49 @@
       </tr>
     </thead>
   <tr>
+    <td>.toString</td>
     <td>.pop, .push</td>
     <td>.call</td>
     <td>.exec</td>
     <td>.getDate, .getDay</td>
   </tr>
   <tr>
+    <td>.isPrototypeOf</td>
     <td>.shift, .unshift</td>
     <td>.bind</td>
     <td>.test</td>
     <td>.getHours, .getMinutes</td>
   </tr>
    <tr>
+    <td>.hasOwnProperty</td>
     <td>.slice, .join</td>
     <td>.apply</td>
     <td></td>
     <td>.getTimezoneOffset</td>
   </tr>
    <tr>
+    <td>.propertyIsEnumerable</td>
     <td>.sort, .splice</td>
     <td>.length</td>
     <td></td>
     <td>.toLocaleTimeString</td>
   </tr>
   <tr>
+    <td>.valueOf</td>
     <td>.concat, .reverse</td>
   </tr>
   <tr>
+    <td></td>
     <td>.length</td>
   </tr>
 </table>
 
-  <p>To make your own prototype, which by definition is "a first, typical or preliminary model of something, esp. a machine, from which other forms are developed or copied", you are creating a framework for actual instances of the objects you need. To do this using the constructor function, which is the most common and widely supported way, all you need are a few key words. Below is an example:<br />
+  <p>A prototype is, by definition, "a first, typical or preliminary model of something, esp. a machine, from which other forms are developed or copied." When you make a prototype, you are creating a framework for actual instances of the objects you need. The most common and widely supported way to do this is to use the constructor function. All you need are a few key words. For example:<br />
 
     <code>function Vehicle(fuel, wheels, license) {<br />
-      fuelType = fuel;<br />
-      numOfWheels = wheels;<br />
-      requiredLicense = license;<br />
+      this.fuelType = fuel;<br />
+      this.numOfWheels = wheels;<br />
+      this.requiredLicense = license;<br />
     };</code>
 
     <br />
@@ -98,20 +106,20 @@
 
   Now say we want to add another property to our prototype. The way to do this is by using the prototype property (We realize that is probably confusing, but here is the syntax to make it clear):<br />
 
-    <code>Vehicle.prototype.maxSpeed = "some mph"</code>
+    <code>Vehicle.prototype.maxSpeedmph = 0</code>
 
     <br />
     <br />
 
-  And now to add this to car and motorcycle instances we will simply add it like a normal object. The reason it does not automatically add to it is because now we have no perimeter set up in our function to account for maxSpeed, so it must be a manual input. This is probably one of the only drags about prototypes.<br />
+  And now to add this attribute to our car and motorcycle instances we will simply assign a value. The reason it does not automatically add to it is because now we have no parameter set up in our function to account for maxSpeed, so it must be a manual input. This is probably one of the only drags about prototypes.<br />
 
-    <code>car.maxSpeed = "140 mph"<br />
-    motorcycle.maxSpeed = "150 mph"</code>
+    <code>car.maxSpeedmph = 140<br />
+    motorcycle.maxSpeedmph = 150</code>
 
     <br />
     <br />
 
-  Now, there is something tricky that happens when you create your own prototypes. Remember how it was noted that since all prototypes get traced back up to the Object prototype and therefore inherit those built in methods, such as .toString? Well, when you create your own prototype you are essecntially writing over those methods, so unless you specify that you want .toString to be a method, it is not going to transform your object into a string. It will however, return to you a string- the string will be "object Object". Basically what happens is that JS will read your object, see that it doesn't have a .toString method, but instead of returning an error, it will move up the prototype tree until it reaches the prototype that does have that method, which is the Object prototype. It then returns a string with the property of the Object prototype. Guess what the property of every prototype is- object! Because all prototypes are objects! Now, if one of the properties of your prototype is left empty, for example, if we didn't add 4 to car.numOfWheels, that would return undefined. But, the prototype objects themselves are never actually empty, they always have the property with the value of object.</p>
+  Custom prototypes are a different ball game. Unlike the standard prototypes, your homespun prototypes will be missing many core methods. It is common, for example, to want to display your object in a meaningful way, and for this purpose the .toString method exists. But if we call .toString on our <code>car</code>, the parser will look in the instance for a .toString method. Since it's not there, it goes up the chain to <code>Vehicle</code> -- which also contains no such method. So we instead receive the default toString method from the Object prototype. All <em>that</em> method knows about itself is that it's an object. So <code>car.toString</code> will return the result <code>[object Object]</code></p>
 
 </body>
 
