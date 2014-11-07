@@ -1,10 +1,7 @@
 div {
-  display: inline-block;
+  display: inline;
 }
 
-img {
-  float: center;
-}
 
 h3 {
   float: center;
