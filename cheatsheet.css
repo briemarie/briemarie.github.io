@@ -6,4 +6,16 @@ h3 {
 
 table {
     border: 1px solid black;
+    width:80%;
+    text-align:center;
+    display:block;
 }
+
+img {
+  text-align:center;
+  display:block;
+  margin-left: 100px;
+}
+ code {
+  background-color: #FFFF66;
+ }
