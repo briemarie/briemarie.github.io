@@ -7,3 +7,8 @@ img {
 * {
   background-color: black;
 }
+
+.center {
+  text-align: center;
+  padding-bottom: 50px;
+}
