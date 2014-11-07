@@ -111,7 +111,7 @@
     <br />
     <br />
 
-  And now to add this attribute to our car and motorcycle instances we will simply assign a value. The reason it does not automatically add to it is because now we have no parameter set up in our function to account for maxSpeed, so it must be a manual input. This is probably one of the only drags about prototypes.<br />
+  And now to add this attribute to our car and motorcycle instances we will simply assign a value. The reason it does not automatically add to it is because now we have no parameter set up in our function to account for maxSpeedmph, so it must be a manual input.<br />
 
     <code>car.maxSpeedmph = 140<br />
     motorcycle.maxSpeedmph = 150</code>
@@ -119,7 +119,7 @@
     <br />
     <br />
 
-  Custom prototypes are a different ball game. Unlike the standard prototypes, your homespun prototypes will be missing many core methods. It is common, for example, to want to display your object in a meaningful way, and for this purpose the .toString method exists. But if we call .toString on our <code>car</code>, the parser will look in the instance for a .toString method. Since it's not there, it goes up the chain to <code>Vehicle</code> -- which also contains no such method. So we instead receive the default toString method from the Object prototype. All <em>that</em> method knows about itself is that it's an object. So <code>car.toString</code> will return the result <code>[object Object]</code></p>
+  Custom prototypes are a different ball game. Unlike the standard prototypes, your homespun prototypes will be missing many core methods. It is common, for example, to want to display your object in a meaningful way, and for this purpose the <code>.toString</code> method exists. But if we call <code>.toString</code> on our <code>car</code>, the parser will look in the instance for a <code>.toString</code> method. Since it's not there, it goes up the chain to <code>Vehicle</code> -- which also contains no such method. So we instead receive the default <code>.toString</code> method from the Object prototype. All <em>that</em> method knows about itself is that it's an object. So <code>car.toString</code> will return the result <code>[object Object]</code></p>
 
 </body>
 
