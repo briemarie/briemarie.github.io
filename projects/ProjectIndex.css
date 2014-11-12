@@ -3,13 +3,14 @@
 }
 
 h1 {
+  text-align: center;
   color: white;
-  font-family: 'Lobster', cursive;
+  font-family: perpetua, georgia;
 }
 
 h3 {
   color: white;
-  font-family: 'Lobster', cursive;
+  font-family: perpetua, georgia;
 }
 
 img {
@@ -18,8 +19,11 @@ img {
 
 .center {
   text-align: center;
-  padding-bottom: 50px;
-  color: white;
-  font-family: 'Lobster', cursive;
+  padding-bottom: 20px;
+}
+
+a {
+  font-family: perpetua, georgia;
   text-decoration: none;
+  color: white;
 }
