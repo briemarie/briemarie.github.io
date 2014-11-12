@@ -4,6 +4,7 @@ img {
   height: 350px;
   width: 700px;
   margin-left: 300px;
+  border: 2px solid white;
 }
 
 * {
@@ -12,13 +13,17 @@ img {
 
 .center {
   text-align: center;
-  padding-bottom: 50px;
-  color: white;
-  font-family: 'Lobster', cursive;
+  padding-bottom: 20px;
+}
+
+a {
+  font-family: perpetua, georgia;
   text-decoration: none;
+  color: white;
 }
 
 h3 {
   text-align: center;
+  font-family: perpetua, georgia;
   color: white;
 }
