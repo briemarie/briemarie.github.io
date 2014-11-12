@@ -40,8 +40,11 @@ h3 {
 div {
   margin-top: 0;
   margin-bottom: 0;
+  display: inline-block;
+  text-align: center;
+  margin-left: 12%;
 }
 
 .logo {
-  margin-left: 0;
+  margin-left: 20px;
 }
