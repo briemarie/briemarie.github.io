@@ -2,30 +2,23 @@
   background-color: #66FFCC;
 }
 
-background {
-  opacity: 0.2;
-}
-
 .center {
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 h1 {
   font-size: 50px;
-  font-family: cursive;
+  font-family: perpetua, georgia;
   font-weight: bold;
-  text-decoration: none;
   text-align: center;
   margin-bottom: 50px;
 }
 
 h2 {
-  font-family: cursive;
+  font-family: perpetua, georgia;
   font-weight: bold;
-  text-decoration: none;
   text-align: center;
-
 }
 
 div {
@@ -36,13 +29,12 @@ div {
 
 span {
   font-size: 16px;
-
 }
 
 p{
   background-color: white;
-  font-family: cursive;
-  font-weight: bold;
+  font-family: perpetua, georgia;
+  font-size: 20px;
 }
 
 a {
@@ -58,8 +50,9 @@ img {
 }
 
 code {
-  background-color: #DE5959;
-  font-size: 14px;
+  background-color: #FFDB4D;
+  font-family: perpetua, georgia;
+  font-size: 20px;
 }
 
 
