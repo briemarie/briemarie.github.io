@@ -3,7 +3,7 @@
 }
 
 img {
-  margin-top: 5%;
+  margin-top: 10%;
   margin-bottom: 10%;
   margin-left: 10%;
   display: inline-block;
@@ -23,12 +23,15 @@ h1 {
 
 .center {
   text-align: center;
-  padding-bottom: 20px;
 }
 
 a {
   font-family: perpetua, georgia;
   text-decoration: none;
   color: white;
+}
+
+.logo {
+  text-align: center;
 }
 
