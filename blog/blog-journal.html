@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheets.css"/>
-<style type="text/css">
-  .centeredImage
-    {
-    text-align:center;
-    display:block;
-    }
-</style>
+  <title>Bootcamp Blog</title>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheets.css"/>
+  <style type="text/css">
+    .centeredImage
+      {
+      text-align:center;
+      display:block;
+      }
+  </style>
 </head>
 
 
@@ -97,7 +98,7 @@ array.push("Hello");</code>
   <span> October 25, 2014 </span></h2>
 
 <div>
-  <p> Object-oriented design is a great approach to coding, not only because it works, but because it makes sense, at least for English speakers. In English, our language is objet-oriented as well. We say "The cat jumped over the fence." Or, "Dave likes cooking dinner." Or "Stephanie swims freestyle really fast." All of our sentences start with objects, and usually end with objects. The structure is one object performs an action that generally invloves other objects. Its not just that our language is structured this way, but rather it's that our thinking is structured this way, and our language follows that process, but then also reinforces it. We think in terms of objects, and those objects either do something, or have something done to them. Ruby, being the wonderfully human-friendly language that it is, is also object-oriented. On the other hand, there is something called functional programming. Functional programming, when examined, is Ruby's complete opposite. Two of the big keywords for FP are immutable and stateless, according to <a href= "http://www.smashingmagazine.com/2014/07/02/dont-be-scared-of-functional-programming/">Smashing Magazine </a>. Immutable means that the structures never change. But... things do change, that is the state of the world, even the state of our verbal and written languages. Words change meaning based on context constantly, and as time seems to move faster we invent ways to make our language follow along- LOL, BTW. Aside from that though, the physical state of things change constantly- lake levels lower as they are depleted of water, wrinkles appear, children grow taller by the day, spiders' teeth get longer with evolution (yes, this is a true fact about daddy long legs if you'd like to look it up). The point is, life is about change, so its strange to have a computer language that doesn't model this. I guess maybe its idealistic, in that sometimes we would feel better if things didn't change. The other keyword describing FP is stateless, that is, the structure has no knowledge of past or future executions of the program. Now this is really strange- we as humans only know what to do because of what has happened in the past, and only do what we do because of some future projection. Yes, stateless, living only in the moment, is a beautifully zen idea, but once again, it is not very realistic. I personally prefer to learn a language that is modeled off the human experience. *Fun fact: Twitter was first created using Ruby, an object- oriented language, but as it grew exponentially, was changed over to Scala, a functional language.* Now, lets dive in to some of of the specifics about object-oriented design in Ruby.</p>
+  <p> Object-oriented design is a great approach to coding, not only because it works, but because it makes sense, at least for English speakers. In English, our language is objet-oriented as well. We say "The cat jumped over the fence." Or, "Dave likes cooking dinner." Or "Stephanie swims freestyle really fast." All of our sentences start with objects, and usually end with objects. The structure is one object performs an action that generally invloves other objects. Its not just that our language is structured this way, but rather it's that our thinking is structured this way, and our language follows that process, but then also reinforces it. We think in terms of objects, and those objects either do something, or have something done to them. Ruby, being the wonderfully human-friendly language that it is, is also object-oriented. On the other hand, there is something called functional programming. Functional programming, when examined, is Ruby's complete opposite. Two of the big keywords for FP are immutable and stateless, according to <a href= "http://www.smashingmagazine.com/2014/07/02/dont-be-scared-of-functional-programming/">Smashing Magazine </a>. Immutable means that the structures never change. But... things do change, that is the state of the world, even the state of our verbal and written languages. Words change meaning based on context constantly, and as time seems to move faster we invent ways to make our language follow along- LOL, BTW. Aside from that though, the physical state of things change constantly- lake levels lower as they are depleted of water, wrinkles appear, children grow taller by the day, spiders' teeth get longer with evolution (yes, this is a true fact about daddy long legs if you'd like to look it up). The point is, life is about change, so its strange to have a computer language that doesn't model this. I guess maybe its idealistic, in that sometimes we would feel better if things didn't change. The other keyword describing FP is stateless, that is, the structure has no knowledge of past or future executions of the program. Now this is really strange- we as humans only know what to do because of what has happened in the past, and only do what we do because of some future projection. Yes, stateless, living only in the moment, is a beautifully zen idea, but once again, it is not very realistic. I personally prefer to learn a language that is modeled off the human experience. *Fun fact: Twitter was first created using Ruby, an object-oriented language, but as it grew exponentially, was changed over to Scala, a functional language.* Now, lets dive in to some of of the specifics about object-oriented design in Ruby.</p>
 
   <p> One basic component is variable scope. You know how humans like to assign hierarchies? CEO's have all access to their companies, general managers have some access, and the basic employess have limited access? Varible scope works the same way. $global and CONSTANT variables have access across every instance of a program, meaning that every time the program is run, those variables don't change, and sometimes, depending on the output of the program, the variables compile. For example, if you make a program that adds a name into an array, if that array is a global or constant variable, every time the program is run, new names will be added into the same array. Then comes @@class and @instance variables. These variables are accessible within every class, so if you need every method in a class to know what a variable is, you use instance variables. Class variables do this as well, but go one step further and are accessible by all subsequent classes. This will become more clear when I explain inheritance, but basically one class can be the parent class to other classes, and so the subclasses will also have access to class variables. The final scope is local variables. These are variables that get assigned within a method, and are only known within that method.</p>
 
@@ -126,9 +127,23 @@ array.push("Hello");</code>
     &nbsp;&nbsp;&nbsp;&nbsp;@boil<br />
     &nbsp;&nbsp;end<br />
     end</code>
-  <p>Based on the above program, if something gets changed in Tea, all of Chai will be changed as well. Since it is the subclass, the whole class is dependant on it, hence the < sign. Now while this isn't the end of the world in our tiny little tea program, for a big program this could be a huge pain. Composition on the other hand supplies code only for a single object within a class, not the object of objects that a class is. To be completely honest, since I have yet to use composition, and resources found on the internet are difficult to understand, I am going to leave off on supplying code for this. The point to take away though is a subclass inherits all the properites of its entire parent class, while composition gives properties only to a single object.</p>
-  <p> Before leaving this topic though, I would like to explain a few things about the above code. Remember how I said @@class variables can be used by subclasses, but not @instance variables? Does this make you wonder why I was able to use instance variables? Were you also wondering what the attr_accessor line was all about? Attr_accessor, meaning attribute accessor, sets up variables that will be accessible by subclasses, even without @@class variables. There are also attr_writer and attr_reader, meaning that a subclass can either just read a variable, or it can actually write over it. Attr_accessor gives permission to do both. Pretty neat huh? Just don't go typing that program into irb or a ruby file. Like my last Tea class code, it's just a fun visualization about how inheritance works, it wouldn't actually do anything.</p>
-  <p> Finall, I would like to explain some points about another hierarchy found in Ruby- blocs, procs, and lambdas. Blocs are short lines of code that execute some kind of action. Below is one of the most common blocs:</p>
+  <p>Based on the above program, if something gets changed in Tea, all of Chai will be changed as well. Since it is the subclass, the whole class is dependant on it, hence the < sign. Now while this isn't the end of the world in our tiny little tea program, for a big program this could be a huge pain. Composition on the other hand supplies code only for a single object within a class, not the object of objects that a class is. Below is an example the code for this, if our Tea and Chai classes used composition instead of inheritance:</p>
+    <code>class Tea<br />
+      &nbsp;&nbsp;def procedure<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;blend = blend_of_ingredients<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;boil = pot_of_hot_water<br />
+      &nbsp;&nbsp;end<br />
+    end<br />
+    <br />
+    class Chai<br />
+    &nbsp;&nbsp;def make_tea<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;ingredients = ["black tea", "spices", "milk"]<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;procedure = Tea.new<br />
+    &nbsp;&nbsp;end<br />
+    end</code>
+  <p>Using composition over inheritance helps cut down on dependence. Instead of the entire Chai class depending on Tea, now only one method does.</p>
+  <p> Before leaving this topic, I would like to explain a few things about the inheritance code. Remember how I said @@class variables can be used by subclasses, but not @instance variables? Does this make you wonder why I was able to use instance variables in Tea and Chai? Were you also wondering what the attr_accessor line was all about? Attr_accessor, meaning attribute accessor, sets up variables that will be accessible by subclasses, even without @@class variables. There are also attr_writer and attr_reader, meaning that a subclass can either just read a variable, or it can actually write over it. Attr_accessor gives permission to do both. Pretty neat huh? Just don't go typing that program into irb or a ruby file. Like my last Tea class code, it's just a fun visualization about how inheritance works, it wouldn't actually do anything.</p>
+  <p> Finally, I would like to explain some points about another hierarchy found in Ruby- blocs, procs, and lambdas. Blocs are short lines of code that execute some kind of action. Below is one of the most common blocs:</p>
     <code>def array_print<br />
     &nbsp;&nbsp;array.each {|element| print element}<br />
     end</code>
