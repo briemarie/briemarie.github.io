@@ -12,6 +12,7 @@ img {
   margin-left: 10%;
   display: inline-block;
   float: left;
+  position: fixed;
 }
 
 
@@ -23,6 +24,7 @@ h1 {
   font-family: 'Lobster', cursive;
   text-align: center;
   float: right;
+  position: relative;
 }
 
 .center {
@@ -51,4 +53,5 @@ div {
 
 .logo {
   margin-left: 20px;
+  position: relative;
 }
