@@ -1,7 +1,5 @@
 background {
   position: fixed;
-  top: 0;
-  left: 0;
   min-width: 100%;
   min-height: 100%;
 }
@@ -43,8 +41,6 @@ h3 {
 }
 
 div {
-  margin-top: 0;
-  margin-bottom: 0;
   display: inline-block;
   text-align: center;
   margin-left: 12%;
