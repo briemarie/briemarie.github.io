@@ -1,4 +1,5 @@
 background {
+  color: black;
   position: fixed;
   min-width: 100%;
   min-height: 100%;
@@ -47,5 +48,5 @@ div {
 }
 
 .logo {
-  margin-left: 20px;
+  margin-left: 1.2em;
 }
