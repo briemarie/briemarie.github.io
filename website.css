@@ -5,6 +5,12 @@ img {
   margin-right: auto;
 }
 
-h1 h3 {
+h1 {
+  font-family: 'Teko', sans-serif;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Teko', sans-serif;
   text-align: center;
 }
