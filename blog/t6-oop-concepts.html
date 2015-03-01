@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheets.css"/>
+<style type="text/css">
+  .centeredImage
+    {
+    text-align:center;
+    display:block;
+    }
+</style>
+</head>
+
+
+<body>
+
+<h3 class="center"><a href="#"> Home </a> ~ <a href="#"> About Me </a> ~ <a href="#"> Education </a>~<a href="#"> Projects </a> ~ <a href="#"> Blogs</a>
+</h3>
+
+<h1>~Welcome to Brittney's Blog~</h1>
+
+<img src="http://www.commercekitchen.com/wp-content/uploads/2013/10/oop-1024x664.png"class="centeredImage" alt="Object-Oriented Cartoon"/>
+
+
+<h2> Be Objective: Object-Oriented Design for Ruby  <br />
+  <span> October 25, 2014 </span></h2>
+
+<div>
+<p> Object-oriented design is a great approach to coding, not only because it works, but because it makes sense, at least for English speakers. In English, our language is objet-oriented as well. We say "The cat jumped over the fence." Or, "Dave likes cooking dinner." Or "Stephanie swims freestyle really fast." All of our sentences start with objects, and usually end with objects. The structure is one object performs an action that generally invloves other objects. Its not just that our language is structured this way, but rather it's that our thinking is structured this way, and our language follows that process, but then also reinforces it. We think in terms of objects, and those objects either do something, or have something done to them. Ruby, being the wonderfully human-friendly language that it is, is also object-oriented. On the other hand, there is something called functional programming. Functional programming, when examined, is Ruby's complete opposite. Two of the big keywords for FP are immutable and stateless, according to <a href= "http://www.smashingmagazine.com/2014/07/02/dont-be-scared-of-functional-programming/">Smashing Magazine<a/>. Immutable means that the structures never change. But... things do change, that is the state of the world, even the state of our verbal and written languages. Words change meaning based on context constantly, and as time seems to move faster we invent way to make our language follow along- LOL, BTW. Aside from that though, the physical state of things change constantly- lake levels lower as they are depleted of water, wrinkles appear, children grow taller by the day, spiders' teeth get longer with evolution (yes, this is a true fact about daddy long legs if you'd like to look it up). The point is, life is about change, so its strange to have a computer language that doesn't model this. I guess maybe its idealistic, in that sometimes we would feel better if things didn't change. The other keyword describing FP is stateless, that is, the structure has no knowledge of past or future executions of the program. Now this is really strange- we as humans only know what to do because of what has happened in the past, and only do what we do because of some future projection. Yes, stateless, living only in the moment, is a beautifully zen idea, but once again, it is not very realistic. I personally prefer to learn a language that is modeled off the human experience. *Fun fact: Twitter was first created using Ruby, an object- oriented language, but as it grew exponentially, was changed over to Scala, a functional language. Now, lets dive in to some of of the specifics about object-oriented design in Ruby.</p>
+
+<p> One basic component is variable scope. You know how humans like to assign hierarchies? CEO's have all access to their companies, general managers have some access, and the basic employess have limited access? Varible scope works the same way. $global and CONSTANT variables have access across every instance of a program, meaning that every time the program is run, those variables don't change, and sometimes, depending on the output of the program, the variables compile. For example, if you make a program that adds a name into an array, if that array is a global or constant variable, every time the program is run, new names will be added into the same array. Then comes @@class and @instance variables. These variables are accessible within every class, so if you need every method in a class to know what a variable is, you use instance variables. Class variables do this as well, but go one step further and are accessible by all subsequent classes. This will become more clear when I explain inheritance, but basically one class can be the parent class to other classes, and so the subclasses will also have access to class variables. The final scope is local variables. These are variables that get assigned within a method, and are only known within that method.</p>
+
+<p> Speaking of methods and classes, Ruby has something called class methods. This is something I was a bit confused about, but makes sense if I don't try to complicate it. A class method is a main method that performs some task within a class, on that class. Say the method was called bark and the class was called Dog. We could then tell Dog to bark. Bark is part of Dog, it is part of the class itself, a method within it. But, the tricky part is that you can not tell all the other instances of Dog to bark. Why not? Because, as you can see below, bark is called only on self, and Dog is what self refers to. So, on the code below, you could call <code>Dog.bark</code>, but you can not call <code>Dog.new.bark</code>. But don't worry, all dogs will bark simply by running the class, since bark is part of the class.</p>
+<code>
+class Dog<br />
+&nbsp;&nbsp;def self.bark<br />
+&nbsp;&nbsp;puts "Bark, bark!"<br />
+&nbsp;&nbsp;end<br />
+end</code>
+</code>
+
+<p> Now, classes are a wonderful aspect of Ruby that group together methods. But, there is another aspect of Ruby that does the same thing- modules. The best way to distinguish the two is to think about objects vs methods. A module is a built in set of methods that can be performed. For example, there is the Enumerable module that I blogged about in "Ruby Groupies" that has built in methods that all build on the built in .each method. That's easy enough to understand, right? Well, I'm going to complicate it a little more. You know how you build your own classes, and so probably think that that is the class that I'm comparing module to? Well, those classes are actually part of a class called Class. Its really nothing more than a organizational system, so try to keep thinking simple. Some other classes include Array, Hash, String, Integer, the list goes on. A class is just a group of objects that have built in functions. You know how if you are trying to add (+) two strings, you will get an error, "No explict conversion of String to Fixnum"? That's because + is a method that belongs to the Integer, Fixnum, and Bignum classes. Classes are groups of the same objects, such as integers, that have methods. The difference between a module then, is that a module is the group of methods that can be performed on an object. The basis of a class is the object, while the basis of the module is the method. Bring to mind the example of the Enumerable module, which I explained has the foundation of the .each method, exemplifying that a module has its foundation on a method, while a class, such as String, has its foundation on that object. If you're wondering now, "So, not everything in Ruby is object-oriented?"... just remember that methods are performed on objects and by objects, so even modules can be traced back to being object-oriented, but lets not worry about that.</p>
+<p> Now that I've confused you about classes, lets go back to our initial idea about what a class is- a constructed grouping in our code. And as promised, I am going to explain the whole parent-subclass inheritance thing. Remember my blog "Tea Time"? Remember how there was the class Tea, that I said could be broken down into subclasses of Chai, Herbal, and English_style? That's because all of these subclasses share the properties of Tea, but then bring in their own unique components. We could then create subclasses, and have them each 'inherit' the method from Tea that they all share, while being able to function separately from each other. Now, since good programming keeps pieces of code from being to too dependant on other pieces of code for reasons of changability, inheritance, while a cool concept because it shows hierarchy, isn't always a good practice to get into. A better alternative most of the time is to use 'composition.' Now, this is something I have yet to come across in DBC challenges, but I am going to try to explain it. Composition is like inheritance, but the class that uses the methods supplied by composition is not tied to it, only a single object is, so the class itself is less dependant. It will probably help to see some code:</p>
+<code> class Tea<br />
+&nbsp;&nbsp;attr_accessor :blend, :boil<br />
+&nbsp;&nbsp; def procedure<br />
+&nbsp;&nbsp;&nbsp;&nbsp;@blend = blend_of_ingredients<br />
+&nbsp;&nbsp;&nbsp;&nbsp;@boil = pot_of_hot_water<br />
+&nbsp;&nbsp; end<br />
+end<br />
+<br />
+class Chai < Tea<br />
+&nbsp;&nbsp;def make_tea<br />
+&nbsp;&nbsp;&nbsp;&nbsp;@blend = ["black tea", "spices", "milk"]<br />
+&nbsp;&nbsp;&nbsp;&nbsp;@boil<br />
+&nbsp;&nbsp;end<br />
+end<br />
+</code>
+<p>Based on the above program, if something gets changed in Tea, all of Chai will be changed as well. Since it is the subclass, the whole class is dependant on it, hence the < sign. Now while this isn't the end of the world in our tiny little tea program, for a big program this could be a huge pain. Composition on the other hand supplies code only for a single object within a class, not the object of objects that a class is. To be completely honest, since I have yet to use composition, and resources found on the internet are difficult to understand, I am going to leave off on supplying code for this. The point to take away though is a subclass inherits all the properites of its entire parent class, while composition gives properties only to a single object.</p>
+<p> Before leaving this topic though, I would like to explain a few things about the above code. Remember how I said @@class variables can be used by subclasses, but not @instance variables? Does this make you wonder why I was able to use instance variables? Were you also wondering what the attr_accessor line was all about? Attr_accessor, meaning attribute accessor, sets up variables that will be accessible by subclasses, even without @@class variables. There are also attr_writer and attr_reader, meaning that a subclass can either just read a variable, or it can actually write over it. Attr_accessor gives permission to do both. Pretty neat huh? Just don't go typing that program into irb or a ruby file. Like my last Tea class code, it's just a fun visualization about how inheritance works, it wouldn't actually do anything.</p>
+<p> Finall, I would like to explain some points about another hierarchy found in Ruby- blocs, procs, and lambdas. Blocs are short lines of code that execute some kind of action. Below is one of the most common blocs:</p>
+<code> def array_print<br />
+&nbsp;&nbsp;array.each {|element| print element}<br />
+end </code>
+<p> The part of the code in {curly braces} is the bloc. We could also write it as follows, since the opening curly brace means 'do this' and the closing one means 'stop doing that':</p>
+<code> def array_print<br />
+&nbsp;&nbsp;array.each do |element|
+&nbsp;&nbsp;&nbsp;&nbsp;print element<br />
+&nbsp;&nbsp;end<br />
+end </code>
+<p> Now say we had a bloc of code, that was actually some command that was much longer than just a simple print statement, and not only was it long, but we needed to reuse it over and over in out program? Well, in order to follow the DRY (don't repeat yourself) rule, we could save the bloc, or rather the action needed into a 'proc', which is short for procedure. The above code would then be changed to the following:<p>
+<code> def array_print<br />
+&nbsp;&nbsp;print = Proc.new do |element|
+&nbsp;&nbsp;&nbsp;&nbsp;print element<br />
+&nbsp;&nbsp;end<br />
+&nbsp;&nbsp;array1(print)<br />
+&nbsp;&nbsp;array2(print)<br />
+&nbsp;&nbsp;array3(print)<br />
+end</code>
+<p> I hope you can see the hierarchy, because now I am going to add a step higher. First there is blocs, then procs, then lambdas. Lambdas are basically procs, but with all the capabilities of a full on method. They check for number of arguments and they do not stop at the first value returned, but continue on until the whole method is executed. Here is a final bit of code to explain what I mean:</p>
+<code> def array_print<br />
+&nbsp;&nbsp;array(lambda {|element| print element})
+&nbsp;&nbsp;print "Here's another element"<br />
+end</code>
+<p> If the above code was a proc, only the first element would be printed. But a lambda will print the first element, and "Here's another element".
+  </p>
+<p> And that is where I will leave you for now. I'm sure your brain has a lot to process about object-oriented design and Ruby.</p>
+</div>
+
+</body>
+</html>
