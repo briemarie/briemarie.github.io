@@ -23,12 +23,12 @@ a {
   color: black;
 }
 
-#left {
+.left {
   display: inline-block;
   text-align: left;
 }
 
-#right {
+.right {
   display: inline-block;
   text-align: right;
 }
