@@ -14,14 +14,15 @@ h1, h2 {
 
 a {
   font-family: 'Roboto Condensed', sans-serif;
-  letter-spacing: -1px;
   font-weight: bold;
   text-decoration: none;
   color: black;
 }
 
-  .col-xs-3{
-    text-align: center;
-  }
+#right {
+  text-align: right;
+  float: right;
+}
+
 
 
