@@ -35,7 +35,8 @@ a {
     display: inline-block;
     height: 100%;
     vertical-align: bottom;
-    width: 0px;
+    width: 1px;
+    color: white;
 }
 
 
