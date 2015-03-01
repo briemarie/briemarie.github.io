@@ -16,6 +16,7 @@ h3 {
   font-family: 'Roboto Condensed', sans-serif;
   letter-spacing: -1px;
   font-weight: bold;
+  text-align: right;
 }
 
 a {
@@ -23,11 +24,11 @@ a {
   color: black;
 }
 
-.left {
+/*.left {
   text-align: left;
 }
 
 .right {
   text-align: right;
-}
+}*/
 
