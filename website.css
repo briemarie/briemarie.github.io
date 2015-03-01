@@ -19,7 +19,6 @@ h3 {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: bold;
   letter-spacing: -1px;
-  vertical-align: bottom;
 }
 
 a {
@@ -30,6 +29,13 @@ a {
 #right {
   text-align: right;
   float: right;
+}
+
+.bottom {
+    display: inline-block;
+    height: 100%;
+    vertical-align: bottom;
+    width: 0px;
 }
 
 
