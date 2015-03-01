@@ -26,10 +26,6 @@ a {
   color: black;
 }
 
-.uppercase {
-  text-transform: uppercase;
-}
-
 #right {
   text-align: right;
   float: right;
