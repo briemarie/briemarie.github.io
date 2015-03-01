@@ -5,9 +5,15 @@ img {
   margin-right: auto;
 }
 
-h1, h2, h3 {
+h1, h2 {
   font-family: 'Roboto Condensed', sans-serif;
   text-align: center;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: 'Roboto Condensed', sans-serif;
   letter-spacing: -1px;
   font-weight: bold;
 }
@@ -17,6 +23,11 @@ a {
   color: black;
 }
 
-h3 {
-  margin-top: 10%;
+#left {
+  text-align: left;
 }
+
+#right {
+  text-align: right;
+}
+
