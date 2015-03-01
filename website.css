@@ -4,6 +4,10 @@ img {
   margin-right: auto;
 }
 
+#ven {
+  width: 55%;
+}
+
 #cities {
   padding-bottom: 10%;
 }
