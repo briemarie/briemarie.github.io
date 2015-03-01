@@ -1,12 +1,16 @@
-/*img {
+img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
+#ven {
+  width: 55%;
+}
+
 #cities {
   padding-bottom: 10%;
-}*/
+}
 
 h1, h2 {
   font-family: 'Roboto Condensed', sans-serif;
