@@ -42,6 +42,17 @@ a {
   float: right;
 }
 
+#artsee {
+  color: #E60000;
+}
+
+#vendable {
+  color: #85D6FF;
+}
+
+#portfolio {
+  margin-top: 6em;
+}
 
 
 
