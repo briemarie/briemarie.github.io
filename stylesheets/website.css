@@ -9,7 +9,11 @@ img {
 }
 
 #cities {
-  padding-bottom: 10%;
+  padding-bottom: 2.5em;
+}
+
+#berkeley {
+  width: 30%;
 }
 
 h1, h2 {
@@ -37,6 +41,9 @@ a {
   text-align: right;
   float: right;
 }
+
+
+
 
 
 
