@@ -50,16 +50,13 @@ a {
   color: #6DCDEE;
 }
 
-#portfolio {
-  margin-top: 6em;
-}
-
 .scarlett {
   color: #8D1919;
 }
 
 .logo {
-  display: inline-block;
+  display: inline;
+  padding: 1em;
 }
 
 
