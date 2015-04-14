@@ -121,7 +121,10 @@ a {
 hr {
     width: 20px;
     transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
     border: 1px solid;
+    behavior: url(/pie/PIE.htc);
 }
 
 
