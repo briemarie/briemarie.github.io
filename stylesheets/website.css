@@ -85,8 +85,6 @@ a {
   height: 450px;
   width: 450px;
   border-radius:50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
   opacity: .8;
   behavior: url(/pie/PIE.htc);
 }
@@ -121,8 +119,6 @@ a {
 hr {
     width: 20px;
     transform:rotate(90deg);
-    -webkit-transform:rotate(90deg);
-    -moz-transform:rotate(90deg);
     border: 1px solid;
     behavior: url(/pie/PIE.htc);
 }
