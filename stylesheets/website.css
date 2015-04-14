@@ -90,18 +90,18 @@ a {
   font-size:50px;
   letter-spacing: -1px;
   font-weight: bold;
-  color:#000;
+  font-color:#000;
   line-height:450px;
   text-align:center;
 }
 
-.right-circle {
-  background:#E60000;
+.left-circle {
+  background-color:#E60000;
   float: right;
 }
 
-.left-circle {
-  background:#6DCDEE;
+.right-circle {
+  background-color:#6DCDEE;
   float: left;
 }
 
