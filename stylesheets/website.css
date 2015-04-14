@@ -97,12 +97,14 @@ a {
 
 .left-circle {
   background-color:#E60000;
-  float: right;
+  float: left;
+  margin-left: 10%;
 }
 
 .right-circle {
   background-color:#6DCDEE;
-  float: left;
+  float: right;
+  margin-right: 10%;
 }
 
 
