@@ -95,9 +95,9 @@ a {
   text-align:center;
 }
 
-#ven {
-    width: 1000px;
-    height: 500px;
+#ven div{
+    width: 905px;
+    height: 450px;
     text-align: center;
     vertical-align: middle;
     position: relative;
@@ -115,7 +115,7 @@ a {
 .right-circle::before {
   content: 'MAGIC';
   position: absolute;
-  left: 10px
+  left: 385px;
 }
 
 
