@@ -86,7 +86,6 @@ a {
   width: 450px;
   border-radius:50%;
   opacity: .8;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   behavior: url(/pie/PIE.htc);
 }
 
