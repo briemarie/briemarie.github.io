@@ -80,6 +80,10 @@ a {
   opacity: .8;
 }
 
+#venn {
+  text-align: center;
+}
+
 .circle {
   display: inline-block;
   font-family: 'Roboto Condensed', sans-serif;
