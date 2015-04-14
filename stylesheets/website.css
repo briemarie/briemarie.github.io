@@ -13,7 +13,15 @@ img {
 }
 
 #berkeley {
-  width: 30%;
+  width: 40%;
+}
+
+#mcc {
+  width: 50%;
+}
+
+#dbc {
+  width: 50%;
 }
 
 h1, h2{
