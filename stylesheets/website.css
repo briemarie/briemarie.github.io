@@ -86,6 +86,7 @@ a {
   width: 450px;
   border-radius:50%;
   opacity: .8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=.8)";
   behavior: url(/pie/PIE.htc);
 }
 
@@ -119,8 +120,8 @@ a {
 hr {
     width: 20px;
     transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
     border: 1px solid;
-    behavior: url(/pie/PIE.htc);
 }
 
 
