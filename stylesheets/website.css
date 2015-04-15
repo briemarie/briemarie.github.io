@@ -12,6 +12,10 @@ img {
   padding-bottom: 2.5em;
 }
 
+.one-third {
+  text-align: center;
+}
+
 #berkeley {
   width: 45%;
 }
