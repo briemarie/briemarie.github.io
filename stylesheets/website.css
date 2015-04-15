@@ -34,7 +34,7 @@ h3 {
 }
 
 #footer {
-  float:bottom;
+  float: bottom;
   padding-right: 1em;
   padding-left: 1em;
   font-family: 'Roboto Condensed', sans-serif;
@@ -77,9 +77,9 @@ a {
 #venn div{
   height: 450px;
   width: 450px;
-  border-radius:50%;
+  border-radius: 50%;
+  -ms-border-radius: 50%;
   opacity: .8;
-  behavior: url(/pie/PIE.htc);
 }
 
 #venn {
@@ -90,17 +90,17 @@ a {
 .circle {
   display: inline-block;
   font-family: 'Roboto Condensed', sans-serif;
-  font-size:50px;
-  line-height:450px;
-  text-align:center;
+  font-size: 50px;
+  line-height: 450px;
+  text-align: center;
 }
 
 .left-circle {
-  background-color:#E60000;
+  background-color: #E60000;
 }
 
 .right-circle {
-  background-color:#6DCDEE;
+  background-color: #6DCDEE;
   margin-left: -100px;
 }
 
@@ -112,8 +112,8 @@ a {
 
 hr {
     width: 20px;
-    transform:rotate(90deg);
-    -webkit-transform:rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
     border: 1px solid;
 }
 
