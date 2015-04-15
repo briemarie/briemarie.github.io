@@ -78,8 +78,8 @@ a {
   height: 450px;
   width: 450px;
   border-radius: 50%;
-  -ms-border-radius: 50%;
   opacity: .8;
+  behavior: url(/pie/PIE.htc);
 }
 
 #venn {
