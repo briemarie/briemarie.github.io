@@ -35,9 +35,8 @@ h3 {
 
 #footer {
   float:bottom;
-  margin-top: 3%;
-  margin-right: 1%;
-  margin-left: 1%;
+  padding-right: 1em;
+  padding-left: 1em;
   font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -57,13 +56,6 @@ a {
 
 #vendable {
   color: #6DCDEE;
-}
-
-#portfolio {
-  margin-top: 0;
-  margin-right: 1%;
-  margin-left: 1%;
-  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .scarlett {
