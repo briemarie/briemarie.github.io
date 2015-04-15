@@ -39,12 +39,20 @@ h3 {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+#wrapper {
+  min-height:100%;
+  position:relative;
+}
+
+#content {
+  padding-bottom:100px;
+}
+
 #footer {
   padding-right: 1em;
   padding-left: 1em;
   font-family: 'Roboto Condensed', sans-serif;
-  width: 100%;
-  height: 100px;
+  height:100px;
   position: absolute;
   bottom: 0;
   left: 0;
