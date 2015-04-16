@@ -97,7 +97,7 @@ a {
   width: 450px;
   border-radius: 50%;
   opacity: .8;
-  behavior: url(/pie/PIE.htc);
+  behavior: url(/stylesheets/PIE.htc);
 }
 
 #venn {
