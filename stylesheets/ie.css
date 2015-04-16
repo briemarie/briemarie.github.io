@@ -1,0 +1,23 @@
+/*The following CSS is extracted from skeleton.css, but contains ems not rems for ie compatability*/
+
+
+/* Spacing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+button,
+.button {
+  margin-bottom: 1em; }
+input,
+textarea,
+select,
+fieldset {
+  margin-bottom: 1.5em; }
+pre,
+blockquote,
+dl,
+figure,
+table,
+p,
+ul,
+ol,
+form {
+  margin-bottom: 2.5em; }
