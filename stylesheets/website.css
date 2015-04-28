@@ -58,6 +58,7 @@ a {
   font-family: 'Roboto Condensed', sans-serif;
   left: 0;
   right: 0;
+  z-index: 10;
 }
 
 #venn div{
