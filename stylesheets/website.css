@@ -39,6 +39,7 @@ a {
 }
 
 #nav {
+  position: fixed;
   padding-right: 1em;
   padding-left: 1em;
   font-family: 'Roboto Condensed', sans-serif;
@@ -68,6 +69,7 @@ a {
 
 #venn {
   text-align: center;
+  padding-top: 4em;
 }
 
 .circle {
