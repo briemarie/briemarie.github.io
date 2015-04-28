@@ -38,16 +38,6 @@ a {
   right: 0;
 }
 
-#nav {
-  position: fixed;
-  background-color: white;
-  padding-right: 1em;
-  padding-left: 1em;
-  font-family: 'Roboto Condensed', sans-serif;
-  left: 0;
-  right: 0;
-}
-
 #right {
   text-align: right;
   float: right;
@@ -59,6 +49,16 @@ a {
 /*#ven {
   width: 55%;
 }*/
+
+#nav {
+  position: fixed;
+  background-color: white;
+  padding-right: 1em;
+  padding-left: 1em;
+  font-family: 'Roboto Condensed', sans-serif;
+  left: 0;
+  right: 0;
+}
 
 #venn div{
   height: 35vw;
