@@ -32,9 +32,16 @@ a {
 #footer {
   padding-right: 1em;
   padding-left: 1em;
-  padding-bottom: 4em;
   font-family: 'Roboto Condensed', sans-serif;
   position: absolute;
+  left: 0;
+  right: 0;
+}
+
+#nav {
+  padding-right: 1em;
+  padding-left: 1em;
+  font-family: 'Roboto Condensed', sans-serif;
   left: 0;
   right: 0;
 }
@@ -61,7 +68,6 @@ a {
 
 #venn {
   text-align: center;
-  padding-top: 1em;
 }
 
 .circle {
