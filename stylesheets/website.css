@@ -40,6 +40,7 @@ a {
 
 #nav {
   position: fixed;
+  background-color: white;
   padding-right: 1em;
   padding-left: 1em;
   font-family: 'Roboto Condensed', sans-serif;
@@ -105,33 +106,16 @@ hr {
 
 /*About me page*/
 
+.about-me {
+  background-color: #F8F8FF;
+}
+
 #cities {
   padding-bottom: 2.5em;
 }
 
 #about-me-content {
   padding-bottom: 3em;
-}
-
-
-/*Education page*/
-
-.one-third {
-  text-align: center;
-}
-
-#berkeley {
-  width: 80%;
-  margin-top: 2em;
-}
-
-#mcc {
-  margin-top: 2em;
-}
-
-#dbc {
-  width: 95%;
-  margin-top: 2em;
 }
 
 
@@ -155,4 +139,28 @@ hr {
   padding-bottom: 0;
   height: 50px;
   width: 50px;
+}
+
+/*Education page*/
+
+.education {
+  background-color: #FFFCF6;
+}
+
+.one-third {
+  text-align: center;
+}
+
+#berkeley {
+  width: 80%;
+  margin-top: 2em;
+}
+
+#mcc {
+  margin-top: 2em;
+}
+
+#dbc {
+  width: 95%;
+  margin-top: 2em;
 }
