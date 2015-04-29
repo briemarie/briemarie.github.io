@@ -21,7 +21,8 @@ a {
 }
 
 section {
-  padding-top: 4em
+  padding-top: 4em;
+  padding-bottom: 5em;
 }
 
 .scarlett {
@@ -49,10 +50,6 @@ section {
 
 
 /*Index page */
-
-/*#ven {
-  width: 55%;
-}*/
 
 #nav {
   position: fixed;
@@ -141,18 +138,13 @@ hr {
 .logo {
   display: inline;
   padding: 1em;
-  padding-bottom: 0;
-  height: 8rem;
+  height: 10rem;
 }
 
 /*Education page*/
 
 .education {
   background-color: #FFFCF6;
-}
-
-.one-third {
-  text-align: center;
 }
 
 #dbcimg {
