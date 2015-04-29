@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="../stylesheets/skeleton.css">
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <!-- Latest compiled and minified CSS -->
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
     <!--[if lt IE 9]>
       <link rel="stylesheet" href="../stylesheets/ie.css">
     <![endif]-->
@@ -23,34 +24,18 @@
   </head>
 
   <body>
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#signin">
-  Sign In
-</button>
-<div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="signin-label" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="signin-label">Sign In</h4>
-      </div>
-      <form id="sign-in" method="post" action="/sessions">
-        <label class="label" for="username">Username</label>
-        <input type="username" name="username" placeholder="username">
-        <br>
-        <label class="label" for="email">Email</label>
-        <input type="email" name="email" placeholder="e.g., me@example.com" value="<%= @email %>"><br>
-        <label class="label" for="password">Password</label>
-        <input type="password" name="password" placeholder="6 or more characters">
-        <br>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <div class="submit"><input type="submit" value="Sign In"></div>
-          <!-- <button type="button" class="btn btn-primary">Save Me</button> -->
+    <button type="button" data-toggle="modal" data-target="#dbc"></button>
+    <div class="modal fade" id="dbc" tabindex="-1" role="dialog" aria-labelledby="signin-label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          </div>
+          <h2>I graduated from Dev Bootcamp in San Francisco in January of 2015. I completed over 1000 hours of coding in the 18 week program, and feel confident and prepared to start work as a full-stack web and mobile app developer. Areas of focus included Ruby, server and client side Rails, Active Record, functional and OO JS, HTML5 and CSS3 design, single page apps with AJAX and jQuery, front-end AngularJS, and iOS mobile builds with Ionic.
+          </h2>
         </div>
-      </form>
+      </div>
     </div>
-  </div>
-</div>
 
     <div id="wrapper">
       <div id= "header">
@@ -100,6 +85,6 @@
       </div>
     </div>
 
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
   </body>
 </html>
