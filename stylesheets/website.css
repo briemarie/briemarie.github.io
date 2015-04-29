@@ -123,6 +123,15 @@ hr {
 
 /*Portfolio page*/
 
+#artseeimg {
+  border-radius: 25px;
+  background: url('../website-pics/artsee.png');
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px;
+  width: 300px;
+}
+
 #artsee {
   color: #E60000;
 }
