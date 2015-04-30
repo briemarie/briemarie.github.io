@@ -148,3 +148,9 @@ form {
   font-family: 'Roboto Condensed', sans-serif;
   font-size:40px;
 }
+
+.logo {
+  display: inline;
+  padding: 1em;
+  height: 5em;
+}
