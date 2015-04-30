@@ -158,8 +158,10 @@ form {
 
 .col-md-6 {
   width: 50%;
+  display: inline-block;
 }
 
 .col-md-4 {
   width: 33.33333333%;
+  display: inline-block;
 }
