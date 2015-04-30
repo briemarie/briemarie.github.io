@@ -1,7 +1,7 @@
 /*Education page- code taken from skeleton.css then modified without media queries*/
 
   .container {
-    width: 80%; }
+    width: 100%; }
   .column,
   .columns {
     margin-left: 4%; }
