@@ -152,6 +152,14 @@ form {
 .logo {
   display: inline;
   padding: 1em;
-  height: 3em;
-  width: 3em;
+  height: 5em;
+  width: 5em;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+.col-md-4 {
+  width: 33.33333333%;
 }
