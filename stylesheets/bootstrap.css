@@ -43,13 +43,13 @@ audio:not([controls]) {
 template {
   display: none;
 }
-a {
+/*a {
   background-color: transparent;
 }
 a:active,
 a:hover {
   outline: 0;
-}
+}*/
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -199,20 +199,20 @@ th {
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
   }
-  a,
+ /* a,
   a:visited {
     text-decoration: underline;
   }
   a[href]:after {
     content: " (" attr(href) ")";
-  }
+  }*/
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
-  a[href^="#"]:after,
+  /*a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: "";
-  }
+  }*/
   pre,
   blockquote {
     border: 1px solid #999;
@@ -1088,7 +1088,7 @@ textarea {
   font-size: inherit;
   line-height: inherit;
 }
-a {
+/*a {
   color: #337ab7;
   text-decoration: none;
 }
@@ -1101,7 +1101,7 @@ a:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
-}
+}*/
 figure {
   margin: 0;
 }
@@ -1329,64 +1329,64 @@ mark,
 .text-primary {
   color: #337ab7;
 }
-a.text-primary:hover {
+/*a.text-primary:hover {
   color: #286090;
-}
+}*/
 .text-success {
   color: #3c763d;
 }
-a.text-success:hover {
+/*a.text-success:hover {
   color: #2b542c;
-}
+}*/
 .text-info {
   color: #31708f;
 }
-a.text-info:hover {
+/*a.text-info:hover {
   color: #245269;
-}
+}*/
 .text-warning {
   color: #8a6d3b;
 }
-a.text-warning:hover {
+/*a.text-warning:hover {
   color: #66512c;
-}
+}*/
 .text-danger {
   color: #a94442;
 }
-a.text-danger:hover {
+/*a.text-danger:hover {
   color: #843534;
-}
+}*/
 .bg-primary {
   color: #fff;
   background-color: #337ab7;
 }
-a.bg-primary:hover {
+/*a.bg-primary:hover {
   background-color: #286090;
-}
+}*/
 .bg-success {
   background-color: #dff0d8;
 }
-a.bg-success:hover {
+/*a.bg-success:hover {
   background-color: #c1e2b3;
-}
+}*/
 .bg-info {
   background-color: #d9edf7;
 }
-a.bg-info:hover {
+/*a.bg-info:hover {
   background-color: #afd9ee;
-}
+}*/
 .bg-warning {
   background-color: #fcf8e3;
 }
-a.bg-warning:hover {
+/*a.bg-warning:hover {
   background-color: #f7ecb5;
-}
+}*/
 .bg-danger {
   background-color: #f2dede;
 }
-a.bg-danger:hover {
+/*a.bg-danger:hover {
   background-color: #e4b9b9;
-}
+}*/
 .page-header {
   padding-bottom: 9px;
   margin: 40px 0 20px;
