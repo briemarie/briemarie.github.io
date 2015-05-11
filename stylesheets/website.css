@@ -63,8 +63,8 @@ section {
 }
 
 #venn div{
-  height: 35vw;
-  width: 35vw;
+  height: 30vw;
+  width: 30vw;
   border-radius: 50%;
   opacity: .8;
   behavior: url(/stylesheets/PIE.htc);
@@ -79,7 +79,7 @@ section {
   display: inline-block;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 4vw;
-  line-height: 35vw;
+  line-height: 30vw;
   text-align: center;
 }
 
