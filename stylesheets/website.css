@@ -92,7 +92,16 @@ section {
   margin-left: -10vw;
 }
 
+#magic {
+  font-size: 3.5vw;
+}
+
+#name {
+  font-size: 3vw;
+}
+
 #intro {
+  font-size: 2.5vw;
   text-align: center;
 }
 
