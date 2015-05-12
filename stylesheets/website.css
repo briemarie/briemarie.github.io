@@ -22,7 +22,7 @@ a {
 
 section {
   padding-top: 4em;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .scarlett {
