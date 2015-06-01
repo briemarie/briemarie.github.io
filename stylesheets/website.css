@@ -137,18 +137,6 @@ hr {
   margin: auto;
 }
 
-#artseeimg {
-  background: url('../website-pics/artsee.png');
-}
-
-#vendableimg {
-  background: url('../website-pics/vendable.png');
-}
-
-#weatherimg {
-  background: url('../website-pics/Rainyroad.jpg');
-}
-
 #artsee {
   color: #E60000;
 }
