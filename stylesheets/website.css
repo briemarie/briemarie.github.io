@@ -129,31 +129,23 @@ hr {
 
 /*Portfolio page*/
 
-#artseeimg {
+#artseeimg #vendableimg #weatherimg{
   border-radius: 25px;
-  background: url('../website-pics/artsee.png');
   background-position: center;
   width: 13.5em;
   height: 18.5em;
   margin: auto;
 }
 
+#artseeimg {
+  background: url('../website-pics/artsee.png');
+}
 #vendableimg {
-  border-radius: 25px;
   background: url('../website-pics/vendable.png');
-  background-position: center;
-  width: 13.5em;
-  height: 18.5em;
-  margin: auto;
 }
 
 #weatherimg {
-  border-radius: 25px;
   background: url('../website-pics/Rainyroad.jpg');
-  background-position: center;
-  width: 13.5em;
-  height: 18.5em;
-  margin: auto;
 }
 
 #artsee {
