@@ -155,11 +155,6 @@ form {
   width: 5em;
 }
 
-.col-md-6 {
-  width: 49.5%;
-  display: inline-block;
-}
-
 .col-md-4 {
   width: 33%;
   display: inline-block;
