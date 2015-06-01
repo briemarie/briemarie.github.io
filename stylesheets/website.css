@@ -129,7 +129,7 @@ hr {
 
 /*Portfolio page*/
 
-#artseeimg #vendableimg #weatherimg{
+#artseeimg, #vendableimg, #weatherimg{
   border-radius: 25px;
   background-position: center;
   width: 13.5em;
@@ -140,6 +140,7 @@ hr {
 #artseeimg {
   background: url('../website-pics/artsee.png');
 }
+
 #vendableimg {
   background: url('../website-pics/vendable.png');
 }
