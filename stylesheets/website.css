@@ -131,7 +131,6 @@ hr {
 
 #artseeimg, #vendableimg, #weatherimg{
   border-radius: 25px;
-  background-position: center;
   width: 13.5em;
   height: 18.5em;
   margin: auto;
