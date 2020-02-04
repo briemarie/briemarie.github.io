@@ -6,15 +6,23 @@ img {
   margin-right: auto;
 }
 
-h1, h2{
+.h1, .h2, .h3 {
   font-family: 'Montserrat', sans-serif;
-  text-align: center;
   color: #5c5c5c;
 }
 
-h3 {
-  font-family: 'Montserrat', sans-serif;
-  color: #5c5c5c;
+.h1 {
+  font-size: 3.5vw;
+  text-align: center;
+}
+
+.h2 {
+  font-size: 2.5vw;
+  text-align: center;
+}
+
+.h3 {
+  font-size: 1.5vw;
 }
 
 a {
@@ -111,12 +119,8 @@ section {
   background-color: #F8F8FF;
 }
 
-#cities {
-  padding-bottom: 2.5em;
-}
-
 #about-me-content {
-  padding-bottom: 3em;
+  padding: 3em;
 }
 
 

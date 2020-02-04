@@ -1,4 +1,4 @@
- * {
+* {
   background-color: #66FFCC;
 }
 
@@ -54,6 +54,10 @@ code {
   background-color: #FFDB4D;
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
+}
+
+#i4c-draggable-container {
+  display: none;
 }
 
 
