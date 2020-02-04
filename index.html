@@ -15,180 +15,37 @@
       <link rel="stylesheet" href="../stylesheets/ie.css">
     <![endif]-->
 
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <div id="wrapper">
       <div id="nav">
-        <h3><a  href="#about-me">ABOUT ME</a>.<a href="#portfolio">PORTFOLIO</a><span id="right"><a href="#education">EDUCATION</a>.<a href="http://briemarie.me/blog-journal.html">BLOG</a></span>
-        </h3>
+        <h3><a href="#about-me">ABOUT ME</a> . <a href="#blog">CURRENT MUSINGS</a><span id="right"></span><a href="http://briemarie.github.io/bootcamp-blog.html">BOOTCAMP BLOG</a></h3></span>
       </div>
 
-    <section class="landing" id="landing">
-      <div id= "content">
-        <div id="venn">
-          <div class="circle left-circle">ARTS</div>
-          <div class="circle right-circle">TECH</div>
+      <section class="landing" id="landing">
+        <div id= "content">
+          <div id="venn">
+            <div class="circle left-circle">ARTS</div>
+            <div class="circle right-circle">
+              <span style="font-size:2vw;margin-left:2vw;margin-right:2vw;color:#fff;">MAGIC</span>
+              TECH
+            </div>
+          </div>
+          <hr>
+          <h2 id="name">BRIE.MARIE</h2>
+          <h3 id="intro">CODER.DANCER.POET.TRAVELER.GIGGLER</h3>
         </div>
-        <hr>
-        <h1 id="magic">MAGIC</h1>
-        <h2 id="name">BRIE.MARIE</h2>
-        <h3 id="intro">CODER.PAINTER.POET.TRAVELER.GIGGLER</h3>
-      </div>
-    </section>
+      </section>
 
       <section class="about-me" id="about-me">
         <div id= "about-me-content">
-          <h1 class="scarlett">ABOUT.ME.BRIE.MARIE</h1>
-          <h2>I am a published poet turned creative coder, an art enthusiast and painter transforming personal aesthetic appeals into front-end web and mobile app design. I believe in inventing and reinventing myself often. When I was eleven, I trained myself to be left handed. I am a right-brain, big-picture thinker balancing the world of linear logic and reason. I am impassioned by efforts to reduce human trafficking, both locally and globally. I believe in dancing and laughing as much as possible. I love foggy mornings and espresso, making San Francisco and Seattle my two favorite cities.
+          <h1 class="scarlett">ABOUT ME</h1>
+          <h2>I am a published poet turned creative coder, translating my knowledge of the symbolic language of poetry into the symbolic language of computer programs. I am fascinated by the overlap between writing literature and writing code, machine learning and the future of AI, the mind and consciousness, astronomy and physics, and cultivating the humanness that drives successful teams and businesses. I have worked professionally as a software engineer and as an engineering team lead in the US and Australia. I believe in dancing daily and laughing hourly, at least. The following musings are my attempt at bridging all of the diversity of thought that makes me excited to wake up every morning, no matter where in the world I may find myself. (If you'd like to take a trip back in time, you can also find the link to my bootcamp blog above).
           </h2>
 
           <img src="../website-pics/seattle_SF.png" id="cities"/>
-        </div>
-      </section>
-
-      <section class="portfolio" id="portfolio">
-        <div id= "content">
-          <h1 class="scarlett">BRIE.MARIE.PORTFOLIO</h1>
-
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-4">
-                <a href="#portfolio"><img src="../website-pics/artsee.png" id="artseeimg" data-toggle="modal" data-target="#art"/></a>
-                <div class="modal fade" id="art" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
-                        <h2 class="modal-title">Artsee</h2>
-                      </div>
-                      <div class="modal-body">
-                        <h2>As a part of Dev Bootcamp's curriculum, I completed a solo app challenge in just three nights. I developed a web app, Artsee, which consumes the Brooklyn Museum API to allow for quick art searches based on a desired artist. A future feature of the app will be the integration of a music API that cross references a chosen artwork's creation date and plays music that could have possibly inspired the artist while at work on the piece.
-                        </h2>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <a href="#portfolio"><img src="../website-pics/vendable.png" id="vendableimg" data-toggle="modal" data-target="#vend"/></a>
-                <div class="modal fade" id="vend" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
-                        <h2 class="modal-title">Vendable</h2>
-                      </div>
-                      <div class="modal-body">
-                        <h2>In order to graduate Dev Bootcamp, groups completed larger scale apps in under a week. My team's app, Vendable, was developed using a Node.js back-end and an AngluarJS/Ionic front-end mobile iOS design. The app is meant to simplify the grocery shopping experience in a big city— complete with a MongoDB of over 100 thousand items found at big chain grocery stores, the app allows a user to find stores based on a 5 mile radius and create a shopping list of desired items found at a selected store. The list pulls the data and updates the user's list with item prices and and a grand total. When the user is ready, the app uses the Google Maps API to route directions to the chosen store.
-                        </h2>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <a href="#portfolio"><img src="../website-pics/Rainyroad.jpg" id="weatherimg" data-toggle="modal" data-target="#weather"/></a>
-                <div class="modal fade" id="weather" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
-                        <h2 class="modal-title">WeatherOrNot</h2>
-                      </div>
-                      <div class="modal-body">
-                        <h2>I am currently working on a personal project that was inspired by a solo road trip through the Pacific Northwest. Have you ever been traveling, and wondered whether or not you were going to hit adverse weather conditions, such as snow or rain, along your journey? WeatherOrNot will take the guessing out of road trips by allowing a user to route a trip using the GoogleMaps API, and then will give weather updates along the route, especially for areas of significant altitude changes, terrain changes, and significant distances traveled. Weather updates will be provided through the Weather Underground API. I am currently building the app in Rails to keep my Ruby skills fresh, but since the app is most useful as a mobile app, it will get built into mobile, most likely with PhoneGap.
-                        </h2>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-4">
-                <h3 id="github"><a id="artsee" href="https://github.com/briemarie/artsee">github.com/briemarie/artsee</a></h3>
-              </div>
-              <div class="col-md-4">
-                <h3 id="github"><a id="vendable" href="https://github.com/briemarie/Vendable">github.com/briemarie/Vendable</a></h3>
-              </div>
-              <div class="col-md-4">
-                <h3 id="github"><a id="weather" href="https://github.com/briemarie/WeatherOrNot">github.com/briemarie/WeatherOrNot</a></h3>
-              </div>
-            </div>
-          </div>
-
-          <h3 id="networks">FOR ADDITIONAL INFORMATION, PLEASE CONNECT WITH ME THROUGH THE FOLLOWING:<br />
-            <a href="https://www.linkedin.com/in/briemarie"><img class= "logo" src="../website-pics/linkedin.png" /></a><a href="https://github.com/briemarie"><img class= "logo" src="../website-pics/github.png"/></a><a href="https://twitter.com/briemarie5"><img class= "logo" src="../website-pics/twitter.png"/></a><a href="mailto:thebriemarie@gmail.com"><img class= "logo" src="../website-pics/gmail.png"/></a>
-          </h3>
-        </div>
-      </section>
-
-      <section class="education" id="education">
-        <div id="content">
-          <h1 class="scarlett">BRIE.MARIE.EDUCATION</h1>
-
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-4">
-                <a href="#education"><img src="../website-pics/Dev-Bootcamp.png" id="dbcimg" data-toggle="modal" data-target="#dbc"/></a>
-                <div class="modal fade" id="dbc" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
-                        <h2 class="modal-title">Dev Bootcamp</h2>
-                      </div>
-                      <div class="modal-body">
-                        <h2>I graduated from Dev Bootcamp in San Francisco in January of 2015. I completed over 1000 hours of coding in the 18 week program, and feel confident and prepared to start work as a full-stack web and mobile app developer. Areas of focus included Ruby, server and client side Rails, Active Record, functional and OO JS, HTML5 and CSS3 design, single page apps with AJAX and jQuery, front-end AngularJS, and iOS mobile builds with Ionic.
-                        </h2>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <a href="#education"><img src="../website-pics/ucberkeley.png" id="berkeleyimg" data-toggle="modal" data-target="#ucb"/></a>
-                <div class="modal fade" id="ucb" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
-                        <h2 class="modal-title">University of California, Berkeley</h2>
-                      </div>
-                      <div class="modal-body">
-                        <h2>I graduated with my BA in English from UC Berkeley in May of 2014. The emphasis of my studies was romantic and modern poetry, and I was awarded a spot in the Phi Beta Kappa Honor Society. While attending, I had four poems published in various literary magazines. I also helped found an all women's meditation group on campus, Fiat Lux for Women.
-                        </h2>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <a href="#education"><img src="../website-pics/Mira_Costa_College_Logo_4c.png" id="mccimg"data-toggle="modal" data-target="#mcc"/></a>
-                <div class="modal fade" id="mcc" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
-                        <h2 class="modal-title">Mira Costa Community College</h2>
-                      </div>
-                      <div class="modal-body">
-                        <h2>I graduated from Mira Costa Community College in Oceanside, California with my AA in Social and Behavioral Sciences in May of 2012. The emphasis of my studies was in various areas of psychology, and I was awarded a spot in the Phi Theta Kappa Honor Society. I had my first poem published in a local literary magazine, and volunteered many hours helping with community activities sponsored by the astronomy department.
-                        </h2>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div id="funfact">
-            <h3>* Fun fact: I was homeschooled for most of my primary and secondary schooling, and graduated high school when I was sixteen.
-            </h3>
-          </div>
         </div>
       </section>
     </div>
