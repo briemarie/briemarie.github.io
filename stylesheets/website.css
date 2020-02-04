@@ -1,28 +1,39 @@
 /*General */
 
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+#nav {
+  position: fixed;
+  background-color: white;
+  padding-right: 1em;
+  padding-left: 1em;
+  font-family: 'Montserrat', sans-serif;
+  left: 0;
+  right: 0;
+  z-index: 10;
 }
 
-.h1, .h2, .h3 {
+.hotlinks {
+  font-size: 2vw;
+}
+
+p {
   font-family: 'Montserrat', sans-serif;
   color: #5c5c5c;
 }
 
-.h1 {
+.name {
   font-size: 3.5vw;
   text-align: center;
 }
 
-.h2 {
-  font-size: 2.5vw;
+.intro {
+  font-size: 2vw;
   text-align: center;
 }
 
-.h3 {
-  font-size: 1.5vw;
+.title {
+  font-size: 2.5vw;
+  text-align: center;
+  color: #ed4a43;
 }
 
 a {
@@ -35,9 +46,6 @@ section {
   min-height: 100vh;
 }
 
-.scarlett {
-  color: #8D1919;
-}
 
 #wrapper {
   min-height:100%;
@@ -58,20 +66,6 @@ section {
   float: right;
 }
 
-
-/*Index page */
-
-#nav {
-  position: fixed;
-  background-color: white;
-  padding-right: 1em;
-  padding-left: 1em;
-  font-family: 'Montserrat', sans-serif;
-  left: 0;
-  right: 0;
-  z-index: 10;
-}
-
 #venn div{
   height: 30vw;
   width: 30vw;
@@ -82,6 +76,7 @@ section {
 
 #venn {
   text-align: center;
+  margin: 5vh;
 }
 
 .circle {
@@ -102,81 +97,16 @@ section {
   text-align: left;
 }
 
-
-#name {
-  font-size: 3vw;
-}
-
-#intro {
-  font-size: 2.5vw;
-  text-align: center;
-}
-
-
-/*About me page*/
+/*About me*/
 
 .about-me {
   background-color: #F8F8FF;
 }
 
 #about-me-content {
-  padding: 3em;
+  padding: 3vw;
 }
 
-
-/*Portfolio page*/
-
-#artseeimg, #vendableimg, #weatherimg{
-  border-radius: 25px;
-  width: 13.5em;
-  height: 18.5em;
-  margin: auto;
-}
-
-#artsee {
-  color: #E60000;
-}
-
-#vendable {
-  color: #6DCDEE;
-}
-
-#github {
-  text-align: center;
-}
-
-#networks {
-  text-align: center;
-}
-
-.logo {
-  display: inline;
-  padding: 1em;
-  height: 10rem;
-}
-
-/*Education page*/
-
-.education {
-  background-color: #FFFCF6;
-}
-
-#dbcimg {
-  width: 95%;
-  margin-top: 2em;
-}
-
-#berkeleyimg {
-  width: 80%;
-  margin-top: 2em;
-}
-
-#mccimg {
-  width: 75%;
-  margin-top: 2em;
-}
-
-#funfact {
-  padding-top: 2em;
-  text-align: center;
+.copy {
+  font-size: 2vw;
 }
