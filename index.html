@@ -48,37 +48,59 @@
       <section class="blog" id="blog">
         <div class="content">
           <p class="title">CURRENT MUSiNGS</p>
-          <p class="entry-date">February 4, 2020</p>
-          <p class="copy">When I moved back to San Francisco after living and working in Adelaide, South Australia, our Director of Engineering suggested that I start a blog to keep in touch with the engineering team that I would be 8,069 miles/12,987 kilometers from. To write down what I was learning and exploring. I had started this website and a blog 5 years ago when I was at Dev Bootcamp, so instead of creating a new blog, I decided to revise my old site.
-          <br><br>
-          So, what have I been exploring in regards to my job?
-          <br><br>
-          <b>Concurrency</b>
-          <br>
-          Firstly, our backend at work is written in Go. Having come from a bootcamp where I initially learned Ruby on Rails, this was a big shift for me 4 years ago when I first started learning Go, but I have come to love it as a language. I can code in Go mostly-fluently now, but was recently asked by a friend to explain why our company decided to use Go. I began to talk about concurrency, but after floundering around a bit trying to synthesize my mental impressions of concurrency and our particular business needs into coherent sentences, I decided to do some reading to solidify my understanding. I quickly discovered that I had been conflating 2 different "concurrencies". There is the concurrent updates problem that something like Google Docs has to solve for using the Operational Transformation algorithm, and then there is concurrency in Go, which allows for multiple functions to run without waiting for the preceeding functions to finish. The following resources proved quite valuable to me in clearing up this confusion:
-          <br>
-          <a class="blue-link" target="_blank" href="https://medium.com/@srijancse/how-real-time-collaborative-editing-work-operational-transformation-ac4902d75682">Operational Transformation</a>
-          <br>
-          <a class="blue-link" target="_blank" href="https://mindbowser.com/golang-concurrency/">Golang Concurrency</a>
-          <br><br>
-          <b>Docker and Kubernetes</b>
-          <br>
-          Secondly, I am happy to announce that I finally (think I) understand what Docker is! I've read these docs a few times, but didn't quite get it. I knew that it always booted up when I turned on my computer, and had Kubernetes pods and containers that contained things, and images that were copies of things, but the words didn't synthesize into real meaning. But finally it has clicked. An image is a copy of all the files that are needed to run a service (a copy of the code that I touch on a daily basis). A container is a single service that runs from the code in the image (think microservices). And a pod is group of containers, aka services, that make up an application running on a host. * If you are reading this and my newfound understanding is wrong or incomplete, please don't hesitate to reach out. I'd hate to promote incorrect information, but this is how Docker is working in my mind. For further reading, the docs are an excellent place to start:
-          <br>
-          <a class="blue-link" target="_blank" href="https://docs.docker.com/get-started/">Docker Docs</a>
-          <br><br>
-          Concurrency and containers are useful and all, but what really gets me personally excited as of late?
-          <br><br>
-          <b>Code Parties!</b>
-          <br>
-          What better way to bridge arts and tech than to make music with code?! Check out the article about last year's live coding party - <a class="blue-link" target="_blank" href="https://www.wired.com/story/algoraves-live-coding-djs/">DJs of the Future Don't Spin Records—They Write Code</a>. Unfortunately, I will not be in San Francisco when the next one happens at <a class="blue-link" target="_blank" href="https://aaassembly.org/">Algorithmic Art Assembly</a>, but this really gets my neurdons firing!
-          <br><br>
-          <b>Spotify</b>
-          <br>
-          Ok, I know, I know. I'm an (extremely) latecomer on the Spotify scene. I didn't make the switch from Pandora to Spotify until I moved to Australia where Pandora wasn't avaialable. But I was immediately in love and have spent many hours making playlists and pondering about the algorithms and AI models that must be making Spotify awesome. If you do the same, here is an article for your reading pleasure - <a class="blue-link" target="_blank" href="https://qz.com/571007/the-magic-that-makes-spotifys-discover-weekly-playlists-so-damn-good/">The magic that makes Spotify’s Discover Weekly playlists so damn good</a> (yes, it was written in 2015, so I'm very, very late to the scene, but better late than never).
-          <br><br>
-          The list of books and articles that keep me up late at night and put a smile on my face early in the morning is extensive, so I will leave this post here for now. To be continued...
-          </p>
+          <div class="blog-entry">
+            <p class="entry-date">February 5, 2020</p>
+            <p class="copy">
+              Just a quick entry today to list off some of the books I have read over the past year.
+              <br><br>
+              Books that are pertinent to programming:
+              <br><br>
+              <a class="blue-link" target="_blank" href="https://www.amazon.com/Geek-Sublime-Beauty-Code/dp/1555976859">Geek Sublime</a> is a personal all time favorite! It was published by an English professor at UC Berkeley where I graduated from. I had taken a photo of the book when it was listed on the bulletin board of faculty publishings (this was back when I was purely a writer and knew nothing of coding, but the title had caught my eye). A couple of years later, after I had started my career as an engineer, I came across the photo in my photo stream and bought it immediately. A book about the art and aesthetics of coding, this book voiced everything I had been abstractly thining about, but didn't quite have the language to express. The author, Vikram Chandra, is an English professor and a professional programmer, and a newfound hero of mine.
+              <br><br>
+              <a class="blue-link" target="_blank" href="https://www.amazon.com/Philosophy-Software-Design-John-Ousterhout/dp/1732102201/">A Philosophy of Software Design</a> by John Ousterhout (a professor at Stanford) filled in a lot of the gaps for me about how to think about writing software. Since I didn't get a CS degree, but instead went to a bootcamp to learn how to code, I didn't get to study the theories and science behind programming. If you did, you might find the concepts in this book redundant or obvious, but as someone who didn't get that education, I found it to be a valuable book to read.
+              <br><br>
+              <a class="blue-link" target="_blank" href="https://umich.instructure.com/files/884126/download?download_frd=1">The Mythical Man-Month</a> comes up on almost every recommended reading list for engineers, and with good reason. It's a short essay, not a full book, that outlines why adding more engineers to a behind-deadline project never works in our favour.
+              <br><br>
+              Some other personal favorites that have deepened my knowledge of life:
+              <br><br>
+              <a class="blue-link" target="_blank" href="https://www.amazon.com/Edge-Infinity-Encounters-Beauty-Universe/dp/1788400607">On the Edge of Infinity</a> by Stefan Klein is a beautifully written book about the universe that bridges a poetic outlook of awe and wonder with scientific theories in astronomy and physics. We may not be able to explain everything about our universe, as many theories fall short or seem to be rendered incompatible with newfound knowledge, but we can still experience the splendour and mystery of this vast universe we call home.
+              <br><br>
+              <a class="blue-link" target="_blank" href="https://www.amazon.com/Sapiens-Humankind-Yuval-Noah-Harari/dp/0062316117/">Sapiens</a> by Yuval Noah Harari is 'a brief history of humankind' that maps the various evolutions and revolutions of the various human species since we appeared on this planet. Bridging all things human—consciousness, langauge, math, science, law, religion, society, migration, technology, and more—if you have any interest in our past, present, or future, I highly recommend this book!
+            </p>
+          </div>
+          <div class="blog-entry">
+            <p class="entry-date">February 4, 2020</p>
+            <p class="copy">When I moved back to San Francisco after living and working in Adelaide, South Australia, our Director of Engineering suggested that I start a blog to keep in touch with the engineering team that I would be 8,069 miles/12,987 kilometers from. To write down what I was learning and exploring. I had started this website and a blog 5 years ago when I was at Dev Bootcamp, so instead of creating a new blog, I decided to revise my old site.
+            <br><br>
+            So, what have I been exploring in regards to my job?
+            <br><br>
+            <b>Concurrency</b>
+            <br>
+            Firstly, our backend at work is written in Go. Having come from a bootcamp where I initially learned Ruby on Rails, this was a big shift for me 4 years ago when I first started learning Go, but I have come to love it as a language. I can code in Go mostly-fluently now, but was recently asked by a friend to explain why our company decided to use Go. I began to talk about concurrency, but after floundering around a bit trying to synthesize my mental impressions of concurrency and our particular business needs into coherent sentences, I decided to do some reading to solidify my understanding. I quickly discovered that I had been conflating 2 different "concurrencies". There is the concurrent updates problem that something like Google Docs has to solve for using the Operational Transformation algorithm, and then there is concurrency in Go, which allows for multiple functions to run without waiting for the preceeding functions to finish. The following resources proved quite valuable to me in clearing up this confusion:
+            <br>
+            <a class="blue-link" target="_blank" href="https://medium.com/@srijancse/how-real-time-collaborative-editing-work-operational-transformation-ac4902d75682">Operational Transformation</a>
+            <br>
+            <a class="blue-link" target="_blank" href="https://mindbowser.com/golang-concurrency/">Golang Concurrency</a>
+            <br><br>
+            <b>Docker and Kubernetes</b>
+            <br>
+            Secondly, I am happy to announce that I finally (think I) understand what Docker is! I've read these docs a few times, but didn't quite get it. I knew that it always booted up when I turned on my computer, and had Kubernetes pods and containers that contained things, and images that were copies of things, but the words didn't synthesize into real meaning. But finally it has clicked. An image is a copy of all the files that are needed to run a service (a copy of the code that I touch on a daily basis). A container is a single service that runs from the code in the image (think microservices). And a pod is group of containers, aka services, that make up an application running on a host. * If you are reading this and my newfound understanding is wrong or incomplete, please don't hesitate to reach out. I'd hate to promote incorrect information, but this is how Docker is working in my mind. For further reading, the docs are an excellent place to start:
+            <br>
+            <a class="blue-link" target="_blank" href="https://docs.docker.com/get-started/">Docker Docs</a>
+            <br><br>
+            Concurrency and containers are useful and all, but what really gets me personally excited as of late?
+            <br><br>
+            <b>Code Parties!</b>
+            <br>
+            What better way to bridge arts and tech than to make music with code?! Check out the article about last year's live coding party - <a class="blue-link" target="_blank" href="https://www.wired.com/story/algoraves-live-coding-djs/">DJs of the Future Don't Spin Records—They Write Code</a>. Unfortunately, I will not be in San Francisco when the next one happens at <a class="blue-link" target="_blank" href="https://aaassembly.org/">Algorithmic Art Assembly</a>, but this really gets my neurdons firing!
+            <br><br>
+            <b>Spotify</b>
+            <br>
+            Ok, I know, I know. I'm an (extremely) latecomer on the Spotify scene. I didn't make the switch from Pandora to Spotify until I moved to Australia where Pandora wasn't avaialable. But I was immediately in love and have spent many hours making playlists and pondering about the algorithms and AI models that must be making Spotify awesome. If you do the same, here is an article for your reading pleasure - <a class="blue-link" target="_blank" href="https://qz.com/571007/the-magic-that-makes-spotifys-discover-weekly-playlists-so-damn-good/">The magic that makes Spotify’s Discover Weekly playlists so damn good</a> (yes, it was written in 2015, so I'm very, very late to the scene, but better late than never).
+            <br><br>
+            The list of books and articles that keep me up late at night and put a smile on my face early in the morning is extensive, so I will leave this post here for now. To be continued...
+            </p>
+          </div>
         </div>
       </section>
     </div>
