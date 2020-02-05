@@ -36,9 +36,18 @@ p {
   color: #ed4a43;
 }
 
+.entry-date {
+  font-size: 2vw;
+  color: #6DCDEE;
+}
+
 a {
   text-decoration: none;
   color: #5c5c5c;
+}
+
+.blue-link {
+  color: #6DCDEE;
 }
 
 section {
@@ -97,13 +106,13 @@ section {
   text-align: left;
 }
 
-/*About me*/
+/*About me and blog*/
 
 .about-me {
   background-color: #F8F8FF;
 }
 
-#about-me-content {
+.content {
   padding: 3vw;
 }
 

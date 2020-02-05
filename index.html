@@ -36,18 +36,49 @@
       </section>
 
       <section class="about-me" id="about-me">
-        <div id= "about-me-content">
+        <div class="content">
           <p class="title">ABOUT me</p>
-          <p class="copy">A published poet turned creative coder, translating my knowledge of the symbolic language of poetry into the symbolic language of computer programs. Fascinated by the overlap between writing literature and writing code, machine learning and the future of Ai, the mind and consciousness, astronomy and physics, and cultivating the humanness that drives successful teams and businesses.
-          <br>i have worked professionally as a Software Engineer and as an Engineering Team Lead in the US and Australia. i believe in dancing daily and laughing hourly, at least. The following musings are my attempt at bridging the diverse thoughts that excite me when i wake up every morning, no matter where in the world that may be.
-          <br>* if you'd like to take a trip back in time, you can also find the link to my bootcamp blog above.
+          <p class="copy">A published poet turned creative coder, translating my knowledge of the symbolic language of poetry into the symbolic language of computer programs. Fascinated by the overlap between writing literature and writing code, machine learning and the future of AI, the mind and consciousness, astronomy and physics, and cultivating the humanness that drives successful teams and businesses.
+          <br>I have worked professionally as a Software Engineer and as an Engineering Team Lead in the US and Australia. I believe in dancing daily and laughing hourly, at least. The following musings are my attempt at bridging the diverse thoughts that excite me when I wake up every morning, no matter where in the world that may be.
+          <br>* If you'd like to take a trip back in time, you can also find the link to my bootcamp blog above.
           </p>
         </div>
       </section>
 
       <section class="blog" id="blog">
-        <div id= "content">
+        <div class="content">
           <p class="title">CURRENT MUSiNGS</p>
+          <p class="entry-date">February 4, 2020</p>
+          <p class="copy">When I moved back to San Francisco after living and working in Adelaide, South Australia, our Director of Engineering suggested that I start a blog to keep in touch with the engineering team that I would be 8,069 miles/12,987 kilometers from. To write down what I was learning and exploring. I had started this website and a blog 5 years ago when I was at Dev Bootcamp, so instead of creating a new blog, I decided to revise my old site.
+          <br><br>
+          So, what have I been exploring in regards to my job?
+          <br><br>
+          <b>Concurrency</b>
+          <br>
+          Firstly, our backend at work is written in Go. Having come from a bootcamp where I initially learned Ruby on Rails, this was a big shift for me 4 years ago when I first started learning Go, but I have come to love it as a language. I can code in Go mostly-fluently now, but was recently asked by a friend to explain why our company decided to use Go. I began to talk about concurrency, but after floundering around a bit trying to synthesize my mental impressions of concurrency and our particular business needs into coherent sentences, I decided to do some reading to solidify my understanding. I quickly discovered that I had been conflating 2 different "concurrencies". There is the concurrent updates problem that something like Google Docs has to solve for using the Operational Transformation algorithm, and then there is concurrency in Go, which allows for multiple functions to run without waiting for the preceeding functions to finish. The following resources proved quite valuable to me in clearing up this confusion:
+          <br>
+          <a class="blue-link" target="_blank" href="https://medium.com/@srijancse/how-real-time-collaborative-editing-work-operational-transformation-ac4902d75682">Operational Transformation</a>
+          <br>
+          <a class="blue-link" target="_blank" href="https://mindbowser.com/golang-concurrency/">Golang Concurrency</a>
+          <br><br>
+          <b>Docker and Kubernetes</b>
+          <br>
+          Secondly, I am happy to announce that I finally (think I) understand what Docker is! I've read these docs a few times, but didn't quite get it. I knew that it always booted up when I turned on my computer, and had Kubernetes pods and containers that contained things, and images that were copies of things, but the words didn't synthesize into real meaning. But finally it has clicked. An image is a copy of all the files that are needed to run a service (a copy of the code that I touch on a daily basis). A container is a single service that runs from the code in the image (think microservices). And a pod is group of containers, aka services, that make up an application running on a host. * If you are reading this and my newfound understanding is wrong or incomplete, please don't hesitate to reach out. I'd hate to promote incorrect information, but this is how Docker is working in my mind. For further reading, the docs are an excellent place to start:
+          <br>
+          <a class="blue-link" target="_blank" href="https://docs.docker.com/get-started/">Docker Docs</a>
+          <br><br>
+          Concurrency and containers are useful and all, but what really gets me personally excited as of late?
+          <br><br>
+          <b>Code Parties!</b>
+          <br>
+          What better way to bridge arts and tech than to make music with code?! Check out the article about last year's live coding party - <a class="blue-link" target="_blank" href="https://www.wired.com/story/algoraves-live-coding-djs/">DJs of the Future Don't Spin Records—They Write Code</a>. Unfortunately, I will not be in San Francisco when the next one happens at <a class="blue-link" target="_blank" href="https://aaassembly.org/">Algorithmic Art Assembly</a>, but this really gets my neurdons firing!
+          <br><br>
+          <b>Spotify</b>
+          <br>
+          Ok, I know, I know. I'm an (extremely) latecomer on the Spotify scene. I didn't make the switch from Pandora to Spotify until I moved to Australia where Pandora wasn't avaialable. But I was immediately in love and have spent many hours making playlists and pondering about the algorithms and AI models that must be making Spotify awesome. If you do the same, here is an article for your reading pleasure - <a class="blue-link" target="_blank" href="https://qz.com/571007/the-magic-that-makes-spotifys-discover-weekly-playlists-so-damn-good/">The magic that makes Spotify’s Discover Weekly playlists so damn good</a> (yes, it was written in 2015, so I'm very, very late to the scene, but better late than never).
+          <br><br>
+          The list of books and articles that keep me up late at night and put a smile on my face early in the morning is extensive, so I will leave this post here for now. To be continued...
+          </p>
         </div>
       </section>
     </div>
