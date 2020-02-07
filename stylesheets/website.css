@@ -115,6 +115,7 @@ section {
 
 .about-me {
   background-color: #F8F8FF;
+  min-height: 60vh;
 }
 
 .content {
