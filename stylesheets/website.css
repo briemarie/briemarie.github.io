@@ -61,7 +61,6 @@ section {
   min-height: 100vh;
 }
 
-
 #wrapper {
   min-height:100%;
   position:relative;
@@ -123,5 +122,5 @@ section {
 }
 
 .copy {
-  font-size: 2vw;
+  font-size: 1.25em;
 }
